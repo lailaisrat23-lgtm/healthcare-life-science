@@ -1,0 +1,26 @@
+<!-- Status badge component. Rendered by MediCareUI.statusBadge(status).
+     Status is always communicated with an icon plus a text label so colour is
+     never the only signal (WCAG 1.4.1). -->
+<template data-template="status-badge">
+  <span class="status-badge">
+    <svg
+      class="status-badge__icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.75"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 16v-4" />
+      <path d="M12 8h.01" />
+    </svg>
+    <span class="status-badge__label" data-field="label"></span>
+  </span>
+</template>
+
+<!-- Live reload anchor for VS Code Live Server; see README "Local development". -->
+</body>

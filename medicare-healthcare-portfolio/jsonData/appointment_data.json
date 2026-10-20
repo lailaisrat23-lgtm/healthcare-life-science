@@ -1,0 +1,68 @@
+[
+  {
+    "id": "MCA-2401-0001",
+    "patientRef": "Demo Patient A",
+    "doctorId": "doc-001",
+    "clinicId": "clinic-001",
+    "date": "2026-11-04",
+    "time": "10:30",
+    "type": "In-clinic",
+    "status": "Confirmed — Simulated",
+    "notes": "Sample cardiology follow-up entry."
+  },
+  {
+    "id": "MCA-2401-0002",
+    "patientRef": "Demo Patient A",
+    "doctorId": "doc-002",
+    "clinicId": "clinic-002",
+    "date": "2026-11-12",
+    "time": "17:00",
+    "type": "Video consultation",
+    "status": "Awaiting Confirmation — Demo",
+    "notes": "Sample general medicine entry."
+  },
+  {
+    "id": "MCA-2401-0003",
+    "patientRef": "Demo Patient B",
+    "doctorId": "doc-005",
+    "clinicId": "clinic-002",
+    "date": "2026-10-28",
+    "time": "09:45",
+    "type": "In-clinic",
+    "status": "Completed — Simulated",
+    "notes": "Sample paediatric review entry."
+  },
+  {
+    "id": "MCA-2401-0004",
+    "patientRef": "Demo Patient C",
+    "doctorId": "doc-003",
+    "clinicId": "clinic-001",
+    "date": "2026-11-19",
+    "time": "16:15",
+    "type": "In-clinic",
+    "status": "Request Received — Demo",
+    "notes": "Sample dermatology request entry."
+  },
+  {
+    "id": "MCA-2401-0005",
+    "patientRef": "Demo Patient C",
+    "doctorId": "doc-011",
+    "clinicId": "clinic-003",
+    "date": "2026-10-22",
+    "time": "11:00",
+    "type": "In-clinic",
+    "status": "Cancelled — Simulated",
+    "notes": "Sample cancellation entry."
+  },
+  {
+    "id": "MCA-2401-0006",
+    "patientRef": "Demo Patient D",
+    "doctorId": "doc-009",
+    "clinicId": "clinic-005",
+    "date": "2026-12-02",
+    "time": "19:00",
+    "type": "Video consultation",
+    "status": "Request Draft",
+    "notes": "Sample draft entry."
+  }
+]

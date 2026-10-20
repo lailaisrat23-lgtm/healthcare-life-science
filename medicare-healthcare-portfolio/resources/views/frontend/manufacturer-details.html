@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fictional Manufacturer Profile | B2B Demo | MediCare</title>
+    <meta
+      name="description"
+      content="A fictional pharmaceutical manufacturer profile showing a company overview, product portfolio, illustrative manufacturing capabilities, sample documentation categories and a demo inquiry form."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/pharmaceutical-manufacturers.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Fictional Manufacturer Profile | B2B Demo | MediCare" />
+    <meta property="og:description" content="Illustrative capabilities, product portfolio and documentation categories for a fictional manufacturer." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/manufacturer-details.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/pharmaceutical/facility-01.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/supplier-directory.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="manufacturer-details">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Manufacturers|pharmaceutical-manufacturers.html;Company profile"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article data-detail="manufacturer">
+        <header class="detail-hero">
+          <div class="container detail-hero__layout">
+            <div>
+              <div class="company-card__badge-row" data-slot="badges"></div>
+              <h1 class="detail-hero__title mt-4" data-field="name">Fictional manufacturer</h1>
+              <p class="detail-hero__subtitle">Pharmaceutical manufacturing (fictional)</p>
+
+              <ul class="detail-facts">
+                <li class="detail-facts__item">
+                  <span><span class="detail-facts__term">Sample origin</span><span class="detail-facts__value" data-field="country"></span></span>
+                </li>
+                <li class="detail-facts__item">
+                  <span><span class="detail-facts__term">Illustrative since</span><span class="detail-facts__value" data-field="founded"></span></span>
+                </li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="#business-inquiry" data-attr-href="inquiryLink">Business inquiry (demo)</a>
+                <a class="btn btn--ghost" href="pharmaceutical-manufacturers.html">Back to the directory</a>
+              </div>
+            </div>
+
+            <figure>
+              <img
+                class="detail-hero__media detail-hero__media--wide"
+                src=""
+                alt=""
+                width="640"
+                height="360"
+                data-attr-src="image"
+                data-attr-alt="imageAlt"
+              />
+              <figcaption class="text-small text-muted mt-4">Illustration only — no real facility is depicted.</figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="container section">
+          <div class="article-layout">
+            <div>
+              <section class="content-block" aria-labelledby="mfr-about-title">
+                <h2 class="content-block__title" id="mfr-about-title">Company overview</h2>
+                <p data-field="about"></p>
+              </section>
+
+              <section class="content-block" aria-labelledby="mfr-capabilities-title">
+                <h2 class="content-block__title" id="mfr-capabilities-title">Illustrative manufacturing capabilities</h2>
+                <div data-slot="capabilities"></div>
+                <p class="card__text mt-4 mb-0">
+                  Capability statements describe the fictional company only. They are not equipment
+                  specifications, validations or regulatory claims.
+                </p>
+              </section>
+
+              <section class="content-block" aria-labelledby="mfr-portfolio-title">
+                <h2 class="content-block__title" id="mfr-portfolio-title">Sample product portfolio</h2>
+                <div data-slot="portfolio"></div>
+                <p class="card__text mt-4 mb-0">
+                  Portfolio items correspond to fictional catalogue records used elsewhere in this
+                  demonstration.
+                </p>
+              </section>
+
+              <section class="content-block" aria-labelledby="mfr-docs-title">
+                <h2 class="content-block__title" id="mfr-docs-title">Documentation categories (sample)</h2>
+                <div data-slot="documentation"></div>
+                <p class="card__text mt-4 mb-0">
+                  Document titles describe categories only. No real dossier, certificate or approval
+                  document exists or is provided.
+                </p>
+              </section>
+            </div>
+
+            <aside aria-label="Company sidebar">
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Related demonstration content</h2>
+                <div data-slot="supplierLink"></div>
+              </div>
+
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Compliance statement</h2>
+                <p class="card__text mb-0">
+                  This profile is fictional. Nothing here implies licensing, GMP certification, product
+                  registration or any regulatory approval in Bangladesh or any other jurisdiction.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </article>
+
+      <div class="container section" id="business-inquiry" data-component="inquiry-form" data-fill-legend="Manufacturer business inquiry (demo)"></div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. This company, its capabilities, portfolio and documentation categories are invented for portfolio presentation. No certification, approval or commercial relationship is claimed or implied."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

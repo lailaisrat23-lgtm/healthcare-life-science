@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Illustration representing a fictional demonstration product">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf1f2"/>
+      <stop offset="1" stop-color="#f6dade"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#cbg)"/>
+  <circle cx="524" cy="72" r="86" fill="#0b5d63" opacity="0.14"/>
+  <circle cx="96" cy="308" r="70" fill="#8c1d1d" opacity="0.12"/>
+  <rect x="16" y="16" width="608" height="328" rx="20" fill="none" stroke="#8c1d1d" stroke-width="3" opacity="0.25"/>
+  <rect x="104" y="70" width="220" height="220" rx="28" fill="#8c1d1d" opacity="0.1"/>
+  <g transform="translate(196 110) scale(9)" fill="#8c1d1d" opacity="0.95">
+    <path d="M6 4h12a5 5 0 0 1 0 10H6A5 5 0 0 1 6 4z"/>
+  </g>
+  <rect x="364" y="126" width="180" height="14" rx="7" fill="#8c1d1d" opacity="0.45"/>
+  <rect x="364" y="160" width="228" height="14" rx="7" fill="#8c1d1d" opacity="0.3"/>
+  <rect x="364" y="194" width="140" height="14" rx="7" fill="#0b5d63" opacity="0.45"/>
+  <rect x="364" y="228" width="196" height="14" rx="7" fill="#0b5d63" opacity="0.3"/>
+  <g transform="translate(120 296)" fill="#0b5d63" opacity="0.5">
+    <path d="M0 0h22v22H0z M52 0h22v22H52z M104 0h22v22H104z"/>
+  </g>
+</svg>

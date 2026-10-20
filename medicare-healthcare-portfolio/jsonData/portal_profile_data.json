@@ -1,0 +1,8 @@
+{
+  "name": "Demo Patient",
+  "reference": "Patient reference: PAT-DEMO-0001 (fictional)",
+  "bloodGroup": "Sample group: O+ (illustrative)",
+  "age": "Sample age: 34 (illustrative)",
+  "city": "Dhaka",
+  "plan": "Demo health plan: Family Basic (fictional)"
+}

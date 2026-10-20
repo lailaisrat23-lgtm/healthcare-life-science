@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doctor Directory | Fictional Specialist Profiles | MediCare Demo</title>
+    <meta
+      name="description"
+      content="Search a directory of twelve fictional doctor profiles by name, specialty, consultation type and city. All qualifications, fees and availability shown are illustrative demonstration data."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/doctors.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Doctor Directory | Fictional Specialist Profiles | MediCare Demo" />
+    <meta property="og:description" content="Twelve fictional doctor profiles with search, specialty, consultation type and city filters." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/doctors.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/clinic.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="doctors" data-templates="doctor-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Doctors"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Fictional doctor directory</h1>
+          <p class="page-header__intro">
+            Every profile in this directory is invented for portfolio presentation. Qualifications,
+            consultation fees, availability slots and clinic associations are illustrative sample values.
+            No listed doctor is real, licensed or accepting patients.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="directory-layout">
+          <aside aria-label="Filter fictional doctor profiles">
+            <div data-doctor-filters></div>
+            <div class="info-panel mt-6">
+              <h3 class="card__title">Search tips</h3>
+              <ul class="link-list">
+                <li>Search matches doctor name, specialty, city and qualifications.</li>
+                <li>Combine a specialty with a city to narrow the list quickly.</li>
+                <li>Use <em>Clear all</em> to return to the full directory.</li>
+              </ul>
+            </div>
+          </aside>
+
+          <section aria-labelledby="doctor-results-title">
+            <h2 class="visually-hidden" id="doctor-results-title">Doctor search results</h2>
+            <ul class="card-grid" data-doctor-results aria-live="polite"></ul>
+            <div data-doctor-pagination></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

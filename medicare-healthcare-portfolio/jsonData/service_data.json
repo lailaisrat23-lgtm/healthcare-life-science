@@ -1,0 +1,98 @@
+[
+  {
+    "id": "svc-01",
+    "title": "General Medicine",
+    "category": "Consultation",
+    "icon": "stethoscope",
+    "text": "First-visit assessment, follow-up review and referral documentation listings.",
+    "link": "doctors.html"
+  },
+  {
+    "id": "svc-02",
+    "title": "Specialised Clinics",
+    "category": "Consultation",
+    "icon": "building",
+    "text": "Department-based specialist discovery across cardiology, dermatology, neurology and more.",
+    "link": "clinics.html"
+  },
+  {
+    "id": "svc-03",
+    "title": "Telemedicine",
+    "category": "Consultation",
+    "icon": "globe",
+    "text": "Remote consultation workflow demonstration with device and privacy guidance.",
+    "link": "telemedicine.html"
+  },
+  {
+    "id": "svc-04",
+    "title": "Diagnostics & Pathology",
+    "category": "Diagnostics",
+    "icon": "flask",
+    "text": "Test directory with illustrative pricing, preparation notes and report tracking.",
+    "link": "diagnostics.html"
+  },
+  {
+    "id": "svc-05",
+    "title": "E-Pharmacy",
+    "category": "Pharmacy",
+    "icon": "pill",
+    "text": "Category browsing, prescription labels and a local cart preview with no payment.",
+    "link": "pharmacy.html"
+  },
+  {
+    "id": "svc-06",
+    "title": "Pharmaceutical Manufacturing",
+    "category": "Industry",
+    "icon": "factory",
+    "text": "B2B manufacturer profiles, capability summaries and documentation categories.",
+    "link": "pharmaceutical-manufacturers.html"
+  },
+  {
+    "id": "svc-07",
+    "title": "API & Raw Material Directory",
+    "category": "Industry",
+    "icon": "package",
+    "text": "Supplier listings, sample specifications, packaging and storage indicators.",
+    "link": "api-suppliers.html"
+  },
+  {
+    "id": "svc-08",
+    "title": "Health Screening Support",
+    "category": "Diagnostics",
+    "icon": "shield",
+    "text": "Illustrative screening bundles and wellness check service descriptions.",
+    "link": "services.html"
+  },
+  {
+    "id": "svc-09",
+    "title": "Patient Guidance Content",
+    "category": "Support",
+    "icon": "info",
+    "text": "Preparation guidance, FAQs and platform limitation explanations for visitors.",
+    "link": "faq.html"
+  },
+  {
+    "id": "svc-10",
+    "title": "Appointment Request Workflow",
+    "category": "Support",
+    "icon": "calendar",
+    "text": "Static request form with validation and simulated status tracking.",
+    "link": "appointments.html"
+  },
+  {
+    "id": "svc-11",
+    "title": "Report Status Tracking",
+    "category": "Diagnostics",
+    "icon": "file",
+    "text": "Demo report ID lookup showing simulated processing stages.",
+    "link": "report-tracking.html"
+  },
+  {
+    "id": "svc-12",
+    "title": "Patient Portal Preview",
+    "category": "Support",
+    "icon": "dashboard",
+    "text": "Dashboard demonstration with sample appointments, reports and notifications.",
+    "link": "patient-portal.html"
+  }
+]

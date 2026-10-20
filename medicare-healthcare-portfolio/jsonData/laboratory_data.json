@@ -1,0 +1,36 @@
+[
+  {
+    "id": "lab-001",
+    "name": "MediCare Diagnostics (fictional), Dhanmondi",
+    "city": "Dhaka",
+    "turnaround": "Same day – 24 hours (illustrative)",
+    "services": [
+      "Pathology",
+      "Biochemistry",
+      "Hormone assays",
+      "ECG"
+    ]
+  },
+  {
+    "id": "lab-002",
+    "name": "City Pathology Laboratory (fictional), Chattogram",
+    "city": "Chattogram",
+    "turnaround": "12 – 48 hours (illustrative)",
+    "services": [
+      "Pathology",
+      "Biochemistry",
+      "Imaging referrals"
+    ]
+  },
+  {
+    "id": "lab-003",
+    "name": "Prime Lab Services (fictional), Sylhet",
+    "city": "Sylhet",
+    "turnaround": "24 – 72 hours (illustrative)",
+    "services": [
+      "Pathology",
+      "Clinical chemistry",
+      "Sample collection at home (demo)"
+    ]
+  }
+]

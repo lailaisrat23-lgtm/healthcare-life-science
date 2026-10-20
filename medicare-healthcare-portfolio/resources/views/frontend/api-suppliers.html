@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API &amp; Raw Material Supplier Directory | Fictional Demo</title>
+    <meta
+      name="description"
+      content="A B2B demonstration directory of six fictional API and pharmaceutical raw material suppliers with material categories, sample specifications, packaging, storage indicators and documentation availability."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/api-suppliers.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="API &amp; Raw Material Supplier Directory | Fictional Demo" />
+    <meta property="og:description" content="Six fictional supplier profiles with sample material specifications and documentation indicators." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/api-suppliers.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/suppliers/material-01.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/supplier-directory.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="suppliers" data-templates="supplier-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;API &amp; raw material suppliers"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <span class="demo-flag">
+            <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+            <span>Fictional suppliers</span>
+          </span>
+          <h1 class="page-header__title mt-4">API and raw material supplier directory</h1>
+          <p class="page-header__intro">
+            Six fictional supplier profiles demonstrating how material categories, sample
+            specifications, packaging, storage indicators and documentation availability could be
+            presented. No supplier listed here is qualified, certified or approved in any way, and no
+            manufacturing or handling instructions are provided.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="directory-layout">
+          <aside aria-label="Filter supplier profiles">
+            <div data-supplier-filters></div>
+
+            <div class="info-panel mt-6">
+              <h2 class="sidebar-card__title">How to read the records</h2>
+              <ul class="link-list">
+                <li>Sample material names are illustrative records, not offerings.</li>
+                <li>CAS references identify chemical substances publicly.</li>
+                <li>Packaging and storage lines are sample description text.</li>
+                <li>Documentation indicators show availability categories only.</li>
+              </ul>
+            </div>
+          </aside>
+
+          <section aria-labelledby="supplier-results-title">
+            <h2 class="visually-hidden" id="supplier-results-title">Supplier search results</h2>
+            <ul class="card-grid" data-supplier-results aria-live="polite"></ul>
+            <div data-supplier-pagination></div>
+
+            <div class="alert alert--warning mt-8" role="note">
+              <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
+              <div class="alert__body">
+                <strong class="alert__title">Not a qualified supplier list</strong>
+                <p>
+                  These records exist only to demonstrate directory interface patterns. Do not use them
+                  for sourcing decisions, supplier qualification or regulatory documentation.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container section" id="business-inquiry" data-component="inquiry-form" data-fill-legend="Supplier inquiry (demo)"></div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. Every supplier, material record, specification, packaging line and documentation indicator on this page is invented for portfolio presentation. No qualification, certification or approval is claimed or implied."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

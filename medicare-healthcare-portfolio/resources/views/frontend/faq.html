@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frequently Asked Questions | MediCare Platform Demo</title>
+    <meta
+      name="description"
+      content="Categorised answers about appointments, telemedicine, clinics, pharmacy, diagnostics, pharmaceutical suppliers and privacy for the MediCare static portfolio demonstration."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/faq.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Frequently Asked Questions | MediCare Platform Demo" />
+    <meta property="og:description" content="Answers about appointments, telemedicine, diagnostics, pharmacy, suppliers and privacy in this demonstration." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/faq.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="faq">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;FAQ"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Frequently asked questions</h1>
+          <p class="page-header__intro">
+            Answers grouped by area: appointments, telemedicine, clinics and doctors, pharmacy,
+            diagnostics, pharmaceutical suppliers, and privacy and security. Every answer explains how
+            this static demonstration behaves.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="article-layout">
+          <div>
+            <section class="content-block" aria-labelledby="faq-group-0">
+              <h2 class="content-block__title" id="faq-group-0">Appointments</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-0-panel-0">
+                      <span>Does submitting the appointment form really book an appointment?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-0-panel-0" hidden>
+                    <p>No. The form performs client-side validation only and displays confirmation-style demo feedback. Nothing is transmitted, stored or sent to any clinic, doctor or scheduling system.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-0-panel-1">
+                      <span>Can I track an appointment I requested?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-0-panel-1" hidden>
+                    <p>You can look up the demonstration appointment IDs shown on the appointment tracking page (for example MCA-2401-0001). These are fixed sample records used to illustrate how a status timeline could look.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="faq-group-1">
+              <h2 class="content-block__title" id="faq-group-1">Telemedicine</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-1-panel-0">
+                      <span>Can I start a real video consultation here?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-1-panel-0" hidden>
+                    <p>No. The telemedicine pages explain how a remote consultation workflow could work. No video calling, messaging, triage or real-time communication is implemented.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-1-panel-1">
+                      <span>What devices are suggested for remote consultations in general?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-1-panel-1" hidden>
+                    <p>The demonstration lists general considerations such as a stable connection, a quiet space and a device with a working camera and microphone. This is general information, not medical advice.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="faq-group-2">
+              <h2 class="content-block__title" id="faq-group-2">Clinics and doctors</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-2-panel-0">
+                      <span>Are the doctors and clinics shown real?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-2-panel-0" hidden>
+                    <p>No. Every doctor profile, qualification line, clinic and address is fictional demonstration content created for this portfolio. Nothing implies licensure, registration or availability in the real world.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-2-panel-1">
+                      <span>How does the doctor search work?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-2-panel-1" hidden>
+                    <p>Search and filters run entirely in the browser against a local JavaScript dataset. There is no server, database or external service involved.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="faq-group-3">
+              <h2 class="content-block__title" id="faq-group-3">Pharmacy</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-3-panel-0">
+                      <span>Can I buy medicine or upload a prescription?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-3-panel-0" hidden>
+                    <p>No. The pharmacy section is a static catalogue demonstration. The cart preview uses local browser state and cannot initiate payment, ordering or prescription handling.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-3-panel-1">
+                      <span>Why do some products show a prescription-required label?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-3-panel-1" hidden>
+                    <p>The label demonstrates how a real storefront might distinguish restricted categories in the interface. It is applied to fictional sample products only.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="faq-group-4">
+              <h2 class="content-block__title" id="faq-group-4">Diagnostics</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-4-panel-0">
+                      <span>Are the test prices accurate?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-4-panel-0" hidden>
+                    <p>No. All prices in BDT are illustrative demonstration values and do not reflect any real laboratory's pricing.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-4-panel-1">
+                      <span>Does the report tracking page show my medical results?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-4-panel-1" hidden>
+                    <p>No. Report tracking returns fixed fictional sample statuses. No patient-identifiable information is used, stored or displayed.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="faq-group-5">
+              <h2 class="content-block__title" id="faq-group-5">Pharmaceutical suppliers</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-5-panel-0">
+                      <span>Are the manufacturers and raw material suppliers real companies?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-5-panel-0" hidden>
+                    <p>No. All manufacturer and supplier entries are fictional. This demonstration does not imply qualification, certification, approval or any commercial relationship.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-5-panel-1">
+                      <span>Do the enquiry forms send a business inquiry?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-5-panel-1" hidden>
+                    <p>No. Enquiry forms validate input and show demo feedback locally. No message leaves the browser.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="faq-group-6">
+              <h2 class="content-block__title" id="faq-group-6">Privacy and security</h2>
+              <div class="accordion" data-accordion="multi">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-6-panel-0">
+                      <span>What happens to the information I type into the forms?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-6-panel-0" hidden>
+                    <p>Nothing. No form data is transmitted or stored. The interface does not persist sensitive information in browser storage.</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-6-panel-1">
+                      <span>Is this platform safe to use for real healthcare decisions?</span>
+                      <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-6-panel-1" hidden>
+                    <p>No. This is a portfolio demonstration only. Always consult qualified healthcare professionals for real medical concerns.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside aria-label="FAQ sidebar">
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">Still unsure?</h2>
+              <p class="card__text">
+                The demonstration notice on every page summarises the limitations of this project.
+              </p>
+              <p class="mb-0">
+                <a class="btn btn--secondary btn--sm" href="privacy-policy.html">Read the privacy policy sample</a>
+              </p>
+            </div>
+
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">Key limitations</h2>
+              <ul class="link-list">
+                <li>No backend, database or authentication.</li>
+                <li>No payments, orders or prescriptions.</li>
+                <li>No real appointments or medical records.</li>
+                <li>No external API or third-party service calls.</li>
+                <li>All records are fictional sample data.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

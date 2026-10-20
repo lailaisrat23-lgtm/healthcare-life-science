@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Report Status Tracking Demo | Diagnostics | MediCare</title>
+    <meta
+      name="description"
+      content="A simulated diagnostics report tracking interface: enter a fictional demo report ID to see sample laboratory, test name, collection date, simulated status and illustrative availability."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/report-tracking.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Report Status Tracking Demo | Diagnostics | MediCare" />
+    <meta property="og:description" content="Simulated report status lookup using fixed fictional demo report IDs." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/report-tracking.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-diagnostics.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/diagnostics.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="report-tracking">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Diagnostics|diagnostics.html;Report tracking"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Report status tracking (simulated)</h1>
+          <p class="page-header__intro">
+            Enter a fictional demonstration report ID to see how a processing timeline could look. This
+            is a fixed sample dataset: no laboratory has been contacted, no sample exists and no
+            clinical result is displayed.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <form class="tracking-panel" novalidate="novalidate" data-report-form>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Look up a demonstration report</legend>
+            <div class="tracking-panel__form">
+              <div class="form__group">
+                <label class="form__label" for="report-id">Demonstration report ID</label>
+                <input
+                  class="form__control"
+                  type="text"
+                  id="report-id"
+                  name="reportId"
+                  placeholder="For example: MCR-2401-0001"
+                  autocomplete="off"
+                  data-report-input
+                  aria-describedby="report-id-hint"
+                />
+                <p class="form__hint" id="report-id-hint" data-report-hint>
+                  IDs are fictional sample values. Any other value returns an “ID not recognised”
+                  message.
+                </p>
+              </div>
+              <div class="form__group">
+                <button class="btn btn--primary" type="submit">Check simulated status</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <section class="mt-8" aria-labelledby="report-samples-title">
+          <h2 class="content-block__title" id="report-samples-title">Sample report IDs</h2>
+          <div class="cluster">
+            <button class="btn btn--secondary btn--sm" type="button" data-report-sample="MCR-2401-0001">
+              MCR-2401-0001 · Report ready
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-report-sample="MCR-2401-0002">
+              MCR-2401-0002 · Processing
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-report-sample="MCR-2401-0003">
+              MCR-2401-0003 · Sample received
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-report-sample="MCR-2401-0004">
+              MCR-2401-0004 · Collection pending
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-report-sample="MCR-2401-0006">
+              MCR-2401-0006 · Request registered
+            </button>
+          </div>
+        </section>
+
+        <section class="mt-8" aria-labelledby="report-result-title">
+          <h2 class="content-block__title" id="report-result-title">Simulated report result</h2>
+          <div data-report-result aria-live="polite"></div>
+        </section>
+
+        <section class="mt-8" aria-labelledby="report-stages-title">
+          <h2 class="content-block__title" id="report-stages-title">Status labels used in this simulation</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption>Simulated report statuses and what they represent in this demonstration</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Status label</th>
+                  <th scope="col">Meaning in the simulation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Request Registered — Demo</th>
+                  <td>A fictional request recorded in the sample dataset.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sample Collection Pending — Demo</th>
+                  <td>An illustrative waiting state before a sample would be collected.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sample Received — Demo</th>
+                  <td>An illustrative state showing a sample reaching a laboratory.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Processing — Simulated</th>
+                  <td>An illustrative in-progress state. No analysis is performed.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Report Ready — Simulated</th>
+                  <td>A simulated completion marker. No document or result is produced.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="alert alert--warning mt-8" role="note">
+          <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
+          <div class="alert__body">
+            <strong class="alert__title">Not a medical record</strong>
+            <p>
+              Report records are fixed fictional samples with non-identifiable labels such as “Demo
+              Patient A”. Never treat demonstration output as a genuine laboratory result.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. Report identifiers, laboratory names, collection dates and statuses on this page are fixed sample values. No patient-identifiable information is used and no result is valid for diagnosis or treatment."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

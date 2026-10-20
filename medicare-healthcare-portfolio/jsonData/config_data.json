@@ -1,0 +1,14 @@
+{
+  "consultationTypes": [
+    "In-clinic",
+    "Video consultation",
+    "Phone consultation"
+  ],
+  "cities": [
+    "Dhaka",
+    "Chattogram",
+    "Sylhet",
+    "Khulna",
+    "Rajshahi"
+  ]
+}

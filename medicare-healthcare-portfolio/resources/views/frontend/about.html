@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About the MediCare Platform | Integrated Healthcare Demo</title>
+    <meta
+      name="description"
+      content="Learn how the MediCare demonstration platform is structured: its mission, the six healthcare verticals it connects, its service approach and the fictional nature of all content."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/about.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="About the MediCare Platform | Integrated Healthcare Demo" />
+    <meta property="og:description" content="The mission, structure and service approach behind this static healthcare portfolio demonstration." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/about.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-about.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="about">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;About"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <span class="demo-flag">
+            <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+            <span>Fictional organisation</span>
+          </span>
+          <h1 class="page-header__title mt-4">About the MediCare platform</h1>
+          <p class="page-header__intro">
+            MediCare is a portfolio demonstration of an integrated healthcare ecosystem for Bangladesh
+            and international audiences. Every clinician, clinic, laboratory, product, company and
+            record shown anywhere on this site is invented for presentation purposes.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="split">
+          <div>
+            <h2 class="section-title">Platform overview</h2>
+            <p>
+              The platform concept brings six areas of healthcare and life sciences into one navigation
+              model: general and specialised consultation, telemedicine, diagnostics and pathology,
+              retail and e-pharmacy, pharmaceutical manufacturing, and pharmaceutical raw material
+              supply.
+            </p>
+            <p>
+              In a production system these areas would share identity, scheduling and documentation
+              services. This demonstration keeps them connected through a single design system, a shared
+              component library and one consistent set of clearly labelled sample datasets.
+            </p>
+            <p class="mb-0">
+              The technical approach is deliberately simple: static HTML documents, one stylesheet, and
+              vanilla JavaScript modules that render from local data. No backend, database, build
+              pipeline or external API is involved.
+            </p>
+          </div>
+          <figure class="hero__media">
+            <img
+              src="../../../public/assets/images/hero/hero-about.svg"
+              alt="Abstract illustration of a modern clinic reception area."
+              width="960"
+              height="640"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="hero__caption">Illustration only — no real facility is depicted.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <section class="section section--surface" aria-labelledby="mission-title">
+        <div class="container">
+          <h2 class="section-title" id="mission-title">Mission, vision and values</h2>
+          <div class="grid grid--3">
+            <article class="card">
+              <div class="card__body">
+                <h3 class="card__title">Mission</h3>
+                <p class="card__text">
+                  Demonstrate how healthcare information could be organised so that patients can find the
+                  right service quickly, and how industry partners could present capabilities and
+                  documentation clearly.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__body">
+                <h3 class="card__title">Vision</h3>
+                <p class="card__text">
+                  A connected healthcare experience where clinic, diagnostic, pharmacy and supply
+                  information is consistent, accessible and understandable across devices.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__body">
+                <h3 class="card__title">Values</h3>
+                <p class="card__text">
+                  Clarity over decoration, accessibility as a baseline rather than an add-on, honest
+                  labelling of demonstration data, and respect for patient privacy by design.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ecosystem-title">
+        <div class="container">
+          <h2 class="section-title" id="ecosystem-title">The healthcare ecosystem</h2>
+          <p class="section-intro">
+            Each vertical below is represented by a working demonstration section of this site.
+          </p>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption>Demonstration verticals and where to find them</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Vertical</th>
+                  <th scope="col">What it demonstrates</th>
+                  <th scope="col">Where to look</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Specialised clinics</th>
+                  <td>Clinic profiles, departments, facilities and specialist discovery.</td>
+                  <td><a href="clinics.html">Clinic directory</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Telemedicine</th>
+                  <td>Remote consultation workflow, device guidance and privacy notes.</td>
+                  <td><a href="telemedicine.html">Telemedicine overview</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Diagnostics &amp; pathology</th>
+                  <td>Test directory, illustrative pricing, preparation notes and report tracking.</td>
+                  <td><a href="diagnostics.html">Diagnostics directory</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Retail &amp; e-pharmacy</th>
+                  <td>Product catalogue, prescription labels and a local cart preview.</td>
+                  <td><a href="pharmacy.html">Pharmacy catalogue</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Pharmaceutical manufacturers</th>
+                  <td>Company profiles, capability summaries and documentation categories.</td>
+                  <td><a href="pharmaceutical-manufacturers.html">Manufacturer directory</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">API raw material suppliers</th>
+                  <td>Supplier profiles, sample specifications, packaging and storage indicators.</td>
+                  <td><a href="api-suppliers.html">Supplier directory</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="approach-title">
+        <div class="container">
+          <h2 class="section-title" id="approach-title">Service approach</h2>
+          <div class="grid grid--2">
+            <div class="info-panel">
+              <h3 class="card__title">For patients</h3>
+              <ul class="link-list">
+                <li>Clear category navigation and consistent card layouts.</li>
+                <li>Search and filters that always explain what changed and what matched.</li>
+                <li>Accessible states for empty results, validation errors and simulated status.</li>
+                <li>Visible, plain-language disclosure of demonstration data.</li>
+              </ul>
+            </div>
+            <div class="info-panel">
+              <h3 class="card__title">For industry partners</h3>
+              <ul class="link-list">
+                <li>Structured company profiles with capability and documentation categories.</li>
+                <li>Illustrative specification tables for sample materials.</li>
+                <li>Business inquiry forms that validate locally and never transmit.</li>
+                <li>Explicit statements that no certification or approval is claimed.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="figures-title">
+        <div class="container">
+          <h2 class="section-title" id="figures-title">Illustrative participation figures</h2>
+          <p class="section-intro">
+            These figures describe the size of the demonstration dataset itself — not real healthcare
+            activity. They are shown so a visitor can see how trust indicators would be presented.
+          </p>
+          <ul class="stat-grid">
+            <li class="stat">
+              <span class="stat__value">12</span>
+              <span class="stat__label">Listed specialists</span>
+              <span class="stat__note">Illustrative demonstration figure</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">8</span>
+              <span class="stat__label">Partner clinics</span>
+              <span class="stat__note">Illustrative demonstration figure</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">12</span>
+              <span class="stat__label">Diagnostic services</span>
+              <span class="stat__note">Illustrative demonstration figure</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">6</span>
+              <span class="stat__label">Healthcare categories</span>
+              <span class="stat__note">Illustrative demonstration figure</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="team-title">
+        <div class="container">
+          <h2 class="section-title" id="team-title">Demonstration team roles</h2>
+          <p class="section-intro">
+            The roles below illustrate how such a platform might be delivered. They are fictional role
+            descriptions for a portfolio project, not real people.
+          </p>
+          <div class="grid grid--3">
+            <article class="card card--compact">
+              <div class="card__body">
+                <h3 class="card__title">Frontend engineering</h3>
+                <p class="card__text">Component architecture, reusable rendering functions and performance-minded markup.</p>
+              </div>
+            </article>
+            <article class="card card--compact">
+              <div class="card__body">
+                <h3 class="card__title">Clinical information design</h3>
+                <p class="card__text">Fictional dataset modelling and clear separation of educational content from advice.</p>
+              </div>
+            </article>
+            <article class="card card--compact">
+              <div class="card__body">
+                <h3 class="card__title">Accessibility engineering</h3>
+                <p class="card__text">Semantic markup, keyboard operation, contrast targets and reduced-motion support.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

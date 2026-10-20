@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patient Portal Preview | Fictional Dashboard Demo | MediCare</title>
+    <meta
+      name="description"
+      content="A demonstration patient dashboard showing a fictional profile summary, sample upcoming appointments, recent history, simulated report statuses, service shortcuts and example notifications."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/patient-portal.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Patient Portal Preview | Fictional Dashboard Demo | MediCare" />
+    <meta property="og:description" content="A static dashboard demonstration with sample appointments, reports and notifications." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/patient-portal.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/patient-portal.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="patient-portal" data-templates="appointment-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="portal-banner">
+      <p class="portal-banner__text">
+        Demonstration mode: this dashboard uses fictional sample data and has no login, no password and
+        no real patient record.
+      </p>
+      <span class="portal-banner__tag">Demo mode</span>
+    </div>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Patient portal"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <div class="container section" data-portal>
+        <header class="portal-header">
+          <div class="portal-header__identity">
+            <img
+              class="portal-header__avatar"
+              src="../../../public/assets/images/doctors/doctor-01.svg"
+              alt=""
+              width="320"
+              height="320"
+              decoding="async"
+            />
+            <div>
+              <h1 class="portal-header__name" data-field="name">Demo Patient</h1>
+              <p class="portal-header__meta" data-field="reference"></p>
+              <p class="portal-header__meta" data-field="age"></p>
+              <p class="portal-header__meta" data-field="bloodGroup"></p>
+              <p class="portal-header__meta" data-field="city"></p>
+              <p class="portal-header__meta" data-field="plan"></p>
+            </div>
+          </div>
+
+          <div class="cluster">
+            <span class="demo-flag">
+              <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+              <span>Fictional profile</span>
+            </span>
+            <a class="btn btn--secondary btn--sm" href="appointments.html">Request an appointment</a>
+          </div>
+        </header>
+
+        <ul class="metric-row mt-8" data-portal-metrics></ul>
+
+        <div class="portal-grid mt-8">
+          <div>
+            <section class="portal-card" aria-labelledby="portal-upcoming-title">
+              <div class="portal-card__header">
+                <h2 class="portal-card__title" id="portal-upcoming-title">Upcoming sample appointments</h2>
+                <span class="badge badge--info" data-field="appointmentCount"></span>
+              </div>
+              <div data-portal-upcoming></div>
+            </section>
+
+            <section class="portal-card mt-8" aria-labelledby="portal-history-title">
+              <div class="portal-card__header">
+                <h2 class="portal-card__title" id="portal-history-title">Recent appointment history</h2>
+                <a class="btn btn--ghost btn--sm" href="appointment-tracking.html">Open tracking demo</a>
+              </div>
+              <div data-portal-history></div>
+            </section>
+
+            <section class="portal-card mt-8" aria-labelledby="portal-reports-title">
+              <div class="portal-card__header">
+                <h2 class="portal-card__title" id="portal-reports-title">Sample diagnostic report statuses</h2>
+                <span class="badge badge--neutral" data-field="reportCount"></span>
+              </div>
+              <div data-portal-reports></div>
+              <p class="mt-4 mb-0">
+                <a class="btn btn--secondary btn--sm" href="report-tracking.html">Open report tracking demo</a>
+              </p>
+            </section>
+          </div>
+
+          <aside aria-label="Portal sidebar">
+            <section class="portal-card" aria-labelledby="portal-shortcuts-title">
+              <div class="portal-card__header">
+                <h2 class="portal-card__title" id="portal-shortcuts-title">Healthcare service shortcuts</h2>
+              </div>
+              <ul class="shortcut-grid" data-portal-shortcuts></ul>
+            </section>
+
+            <section class="portal-card mt-8" aria-labelledby="portal-notifications-title">
+              <div class="portal-card__header">
+                <h2 class="portal-card__title" id="portal-notifications-title">Example notifications</h2>
+              </div>
+              <div data-portal-notifications></div>
+            </section>
+
+            <section class="portal-card mt-8" aria-labelledby="portal-privacy-title">
+              <div class="portal-card__header">
+                <h2 class="portal-card__title" id="portal-privacy-title">Privacy and storage</h2>
+              </div>
+              <ul class="link-list">
+                <li>No login, password or authentication exists in this demonstration.</li>
+                <li>No medical record is created, stored or retrieved.</li>
+                <li>Nothing is written to cookies or browser storage.</li>
+                <li>Reloading the page simply re-renders the same fictional sample data.</li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. This dashboard preview uses invented sample records only. There is no authentication, no stored medical record and no access to any real patient data."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

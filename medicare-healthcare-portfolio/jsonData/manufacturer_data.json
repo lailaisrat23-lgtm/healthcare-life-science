@@ -1,0 +1,199 @@
+[
+  {
+    "id": "mfr-001",
+    "name": "Northbridge Pharmaceuticals Ltd.",
+    "fictional": true,
+    "country": "Bangladesh (fictional location)",
+    "founded": 1998,
+    "categories": [
+      "Tablets",
+      "Capsules",
+      "Oral Liquids"
+    ],
+    "capabilities": [
+      "Tablet compression lines (illustrative)",
+      "Blister and strip packaging (illustrative)",
+      "In-house quality documentation workflow (sample)"
+    ],
+    "productPortfolio": [
+      "Demo Paracetamol 500 mg Tablet",
+      "Demo Fexofenadine 120 mg Tablet",
+      "Demo Alcohol Hand Sanitiser 500 ml"
+    ],
+    "documentation": [
+      {
+        "title": "Sample dossier index",
+        "meta": "Illustrative document list — not a real filing"
+      },
+      {
+        "title": "Batch record template",
+        "meta": "Sample template category"
+      },
+      {
+        "title": "Stability study outline",
+        "meta": "Illustrative outline only"
+      }
+    ],
+    "about": "Fictional manufacturer profile created purely to demonstrate how a B2B pharmaceutical directory could present company, capability and documentation categories. Nothing here is a certification, approval or regulatory claim.",
+    "image": "pharmaceutical/facility-01.svg"
+  },
+  {
+    "id": "mfr-002",
+    "name": "Delta Life Sciences Pvt. Ltd.",
+    "fictional": true,
+    "country": "Bangladesh (fictional location)",
+    "founded": 2005,
+    "categories": [
+      "Capsules",
+      "Anti-infectives"
+    ],
+    "capabilities": [
+      "Capsule filling suite (illustrative)",
+      "Segregated material handling areas (sample)",
+      "Documentation control workflow (sample)"
+    ],
+    "productPortfolio": [
+      "Demo Omeprazole 20 mg Capsule",
+      "Demo Metronidazole 400 mg Tablet"
+    ],
+    "documentation": [
+      {
+        "title": "Sample specification sheets",
+        "meta": "Illustrative material only"
+      },
+      {
+        "title": "Packaging artwork checklist",
+        "meta": "Sample checklist category"
+      }
+    ],
+    "about": "Fictional B2B profile used to demonstrate manufacturer directory card and detail layouts. No compliance, licence or approval is implied.",
+    "image": "pharmaceutical/facility-02.svg"
+  },
+  {
+    "id": "mfr-003",
+    "name": "Apex Formulations Ltd.",
+    "fictional": true,
+    "country": "Bangladesh (fictional location)",
+    "founded": 2001,
+    "categories": [
+      "Tablets",
+      "Cardiovascular",
+      "Respiratory"
+    ],
+    "capabilities": [
+      "High-speed compression (illustrative)",
+      "Coating capability (illustrative)",
+      "Finished product documentation pack (sample)"
+    ],
+    "productPortfolio": [
+      "Demo Montelukast 10 mg Tablet",
+      "Demo Losartan 50 mg Tablet"
+    ],
+    "documentation": [
+      {
+        "title": "Product dossier outline",
+        "meta": "Illustrative outline"
+      },
+      {
+        "title": "Batch release checklist",
+        "meta": "Sample checklist category"
+      }
+    ],
+    "about": "Fictional manufacturer profile demonstrating a broader product portfolio layout and business enquiry entry point.",
+    "image": "pharmaceutical/facility-03.svg"
+  },
+  {
+    "id": "mfr-004",
+    "name": "GreenCross Biotech Ltd.",
+    "fictional": true,
+    "country": "Bangladesh (fictional location)",
+    "founded": 2012,
+    "categories": [
+      "Oral Liquids",
+      "Paediatric formats",
+      "Hygiene products"
+    ],
+    "capabilities": [
+      "Liquid manufacturing vessels (illustrative)",
+      "Bottle filling and sealing line (illustrative)",
+      "Paediatric pack-size configuration (sample)"
+    ],
+    "productPortfolio": [
+      "Demo Paracetamol Syrup 60 ml",
+      "Demo Oral Rehydration Salt Sachet",
+      "Demo Disposable Face Mask (Box of 20)"
+    ],
+    "documentation": [
+      {
+        "title": "Pack size matrix",
+        "meta": "Sample matrix"
+      },
+      {
+        "title": "Label review checklist",
+        "meta": "Illustrative document list"
+      }
+    ],
+    "about": "Fictional profile used to demonstrate paediatric and hygiene-adjacent manufacturing categories in the directory demo.",
+    "image": "pharmaceutical/facility-04.svg"
+  },
+  {
+    "id": "mfr-005",
+    "name": "Sunrise Pharma Industries",
+    "fictional": true,
+    "country": "Bangladesh (fictional location)",
+    "founded": 1995,
+    "categories": [
+      "Supplements",
+      "Devices distribution"
+    ],
+    "capabilities": [
+      "Supplement blending area (illustrative)",
+      "Bottle packing line (illustrative)",
+      "Third-party distribution documentation (sample)"
+    ],
+    "productPortfolio": [
+      "Demo Vitamin C 250 mg Tablet",
+      "Demo Digital Blood Pressure Monitor"
+    ],
+    "documentation": [
+      {
+        "title": "Distribution agreement template",
+        "meta": "Sample template category"
+      }
+    ],
+    "about": "Fictional manufacturer and distributor profile demonstrating how mixed medicine and device portfolios could be listed.",
+    "image": "pharmaceutical/facility-05.svg"
+  },
+  {
+    "id": "mfr-006",
+    "name": "MediCore Sterile Products Ltd.",
+    "fictional": true,
+    "country": "Bangladesh (fictional location)",
+    "founded": 2009,
+    "categories": [
+      "Sterile formats",
+      "Cold-chain products"
+    ],
+    "capabilities": [
+      "Sterile filling area (illustrative)",
+      "Cold-chain packing configuration (illustrative)",
+      "Temperature log documentation (sample)"
+    ],
+    "productPortfolio": [
+      "Demo Esomeprazole 20 mg Capsule",
+      "Demo Insulin Cartridge 100 IU/ml"
+    ],
+    "documentation": [
+      {
+        "title": "Cold-chain handling outline",
+        "meta": "Illustrative outline only — no handling instructions"
+      },
+      {
+        "title": "Sterile area access log template",
+        "meta": "Sample template category"
+      }
+    ],
+    "about": "Fictional sterile-format manufacturer profile used to demonstrate cold-chain category presentation in this demo.",
+    "image": "pharmaceutical/facility-06.svg"
+  }
+]

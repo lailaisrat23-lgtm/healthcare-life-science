@@ -1,0 +1,41 @@
+<!-- API / raw material supplier card (B2B). Suppliers are fictional; the card
+     explicitly avoids implying qualification, approval or certification. -->
+<template data-template="supplier-card">
+  <article class="card company-card">
+    <figure class="card__media">
+      <img
+        src=""
+        alt=""
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+        data-attr-src="image"
+        data-attr-alt="imageAlt"
+      />
+    </figure>
+    <div class="card__body">
+      <div class="company-card__badge-row" data-slot="badges"></div>
+      <h3 class="card__title" data-field="name"></h3>
+
+      <dl class="card__meta">
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Sample origin</dt>
+          <dd class="card__meta-value" data-field="country"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Sample materials</dt>
+          <dd class="card__meta-value" data-field="materialCount"></dd>
+        </div>
+      </dl>
+
+      <p class="card__text" data-field="categories"></p>
+      <ul class="card__tags" data-slot="tags"></ul>
+
+      <div class="card__footer">
+        <a class="btn btn--secondary btn--sm" data-attr-href="link" data-field="linkLabel">Supplier profile</a>
+        <a class="btn btn--ghost btn--sm" data-attr-href="inquiryLink">Supplier inquiry</a>
+      </div>
+    </div>
+  </article>
+</template>

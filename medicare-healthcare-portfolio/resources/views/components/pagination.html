@@ -1,0 +1,14 @@
+<!-- Pagination component. Rendered by MediCareUI.renderPagination(target, options).
+     Page controls are real buttons inside a labelled <nav>, and the current page
+     is exposed with aria-current="page". -->
+<template data-template="pagination">
+  <nav class="pagination">
+    <ul class="pagination__list" data-slot="pages"></ul>
+  </nav>
+</template>
+
+<template data-template="pagination-item">
+  <li>
+    <button class="pagination__link" type="button" data-page="" data-field="label"></button>
+  </li>
+</template>

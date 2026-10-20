@@ -1,0 +1,198 @@
+[
+  {
+    "id": "sup-001",
+    "name": "Yunhai Fine Chemicals (fictional)",
+    "fictional": true,
+    "country": "Sample origin: China (illustrative)",
+    "founded": 2003,
+    "categories": [
+      "API intermediates",
+      "Solvents"
+    ],
+    "materials": [
+      {
+        "name": "Sample material: Acetic anhydride (illustrative)",
+        "grade": "Industrial grade (sample)",
+        "cas": "108-24-7",
+        "packaging": "Illustrative 200 L drum",
+        "storage": "Sample note: store per supplier documentation. No storage instructions are provided here."
+      },
+      {
+        "name": "Sample material: Sodium hydroxide pellets (illustrative)",
+        "grade": "Technical grade (sample)",
+        "cas": "1310-73-2",
+        "packaging": "Illustrative 25 kg bag",
+        "storage": "Sample note: refer to a real supplier's safety data sheet."
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Sample specification sheet",
+        "meta": "Illustrative document indicator"
+      },
+      {
+        "title": "Sample safety data index",
+        "meta": "Indicator only — no real SDS provided"
+      }
+    ],
+    "about": "Fictional supplier profile used to demonstrate a B2B raw-material directory. This entry is not a qualified, approved or certified supplier of any kind.",
+    "image": "suppliers/material-01.svg"
+  },
+  {
+    "id": "sup-002",
+    "name": "Orbita Chemie AG (fictional)",
+    "fictional": true,
+    "country": "Sample origin: Germany (illustrative)",
+    "founded": 1994,
+    "categories": [
+      "Excipients",
+      "Fine chemicals"
+    ],
+    "materials": [
+      {
+        "name": "Sample material: Microcrystalline cellulose (illustrative)",
+        "grade": "Pharmaceutical-grade category (sample)",
+        "cas": "9004-34-6",
+        "packaging": "Illustrative 20 kg fibre drum",
+        "storage": "Sample note: moisture-sensitive category entry."
+      },
+      {
+        "name": "Sample material: Magnesium stearate (illustrative)",
+        "grade": "Sample grade",
+        "cas": "557-04-0",
+        "packaging": "Illustrative 15 kg carton",
+        "storage": "Sample note: refer to a real supplier's documentation."
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Sample product list",
+        "meta": "Illustrative catalogue extract"
+      }
+    ],
+    "about": "Fictional excipient supplier profile created for layout demonstration only. No qualification or approval status is implied.",
+    "image": "suppliers/material-02.svg"
+  },
+  {
+    "id": "sup-003",
+    "name": "Delta Intermediates Trading (fictional)",
+    "fictional": true,
+    "country": "Sample origin: Singapore (illustrative)",
+    "founded": 2011,
+    "categories": [
+      "Trading",
+      "Packaging materials"
+    ],
+    "materials": [
+      {
+        "name": "Sample material: Aluminium foil laminate (illustrative)",
+        "grade": "Packaging category (sample)",
+        "cas": "Not applicable",
+        "packaging": "Illustrative 50 kg roll",
+        "storage": "Sample note: keep in dry conditions per real documentation."
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Sample packaging specification",
+        "meta": "Illustrative indicator"
+      }
+    ],
+    "about": "Fictional trading house profile used to demonstrate packaging-material categories in the supplier directory.",
+    "image": "suppliers/material-03.svg"
+  },
+  {
+    "id": "sup-004",
+    "name": "Kaveri Organics Lab (fictional)",
+    "fictional": true,
+    "country": "Sample origin: India (illustrative)",
+    "founded": 2007,
+    "categories": [
+      "API intermediates",
+      "Reagents"
+    ],
+    "materials": [
+      {
+        "name": "Sample material: Citric acid monohydrate (illustrative)",
+        "grade": "Sample grade",
+        "cas": "5949-29-1",
+        "packaging": "Illustrative 25 kg sack",
+        "storage": "Sample note: general chemical storage category."
+      },
+      {
+        "name": "Sample material: Ethanol 96% (illustrative)",
+        "grade": "Sample grade",
+        "cas": "64-17-5",
+        "packaging": "Illustrative 20 L container",
+        "storage": "Sample note: flammable category entry — real handling rules apply."
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Sample reagent list",
+        "meta": "Illustrative catalogue extract"
+      },
+      {
+        "title": "Sample lot traceability outline",
+        "meta": "Outline only"
+      }
+    ],
+    "about": "Fictional reagent supplier profile demonstrating multi-material listing layouts in the supplier directory demo.",
+    "image": "suppliers/material-04.svg"
+  },
+  {
+    "id": "sup-005",
+    "name": "Helvetia Nutra Ingredients (fictional)",
+    "fictional": true,
+    "country": "Sample origin: Switzerland (illustrative)",
+    "founded": 2016,
+    "categories": [
+      "Nutraceutical ingredients"
+    ],
+    "materials": [
+      {
+        "name": "Sample material: Ascorbic acid (illustrative)",
+        "grade": "Food-grade category (sample)",
+        "cas": "50-81-7",
+        "packaging": "Illustrative 25 kg drum",
+        "storage": "Sample note: light-sensitive category entry."
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Sample ingredient specification",
+        "meta": "Illustrative indicator"
+      }
+    ],
+    "about": "Fictional nutraceutical ingredient supplier profile used to demonstrate the ingredient category in the directory.",
+    "image": "suppliers/material-05.svg"
+  },
+  {
+    "id": "sup-006",
+    "name": "Andes Analytical Supplies (fictional)",
+    "fictional": true,
+    "country": "Sample origin: Brazil (illustrative)",
+    "founded": 1999,
+    "categories": [
+      "Laboratory consumables",
+      "Reference standards category"
+    ],
+    "materials": [
+      {
+        "name": "Sample material: Volumetric flask set (illustrative)",
+        "grade": "Laboratory consumable (sample)",
+        "cas": "Not applicable",
+        "packaging": "Illustrative boxed set",
+        "storage": "Sample note: fragile item category entry."
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Sample consumables catalogue",
+        "meta": "Illustrative indicator"
+      }
+    ],
+    "about": "Fictional laboratory consumables supplier profile used to demonstrate non-chemical categories in the directory.",
+    "image": "suppliers/material-06.svg"
+  }
+]

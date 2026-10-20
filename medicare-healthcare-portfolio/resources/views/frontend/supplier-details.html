@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fictional Supplier Profile | API &amp; Raw Materials | MediCare</title>
+    <meta
+      name="description"
+      content="A fictional API and raw material supplier profile showing a company overview, sample material listings, illustrative specifications, packaging and storage indicators plus a demo inquiry form."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/api-suppliers.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Fictional Supplier Profile | API &amp; Raw Materials | MediCare" />
+    <meta property="og:description" content="Illustrative material specifications, packaging and documentation indicators for a fictional supplier." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/supplier-details.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/suppliers/material-01.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/supplier-directory.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="supplier-details">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;API suppliers|api-suppliers.html;Supplier profile"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article data-detail="supplier">
+        <header class="detail-hero">
+          <div class="container detail-hero__layout">
+            <div>
+              <div class="company-card__badge-row" data-slot="badges"></div>
+              <h1 class="detail-hero__title mt-4" data-field="name">Fictional supplier</h1>
+              <p class="detail-hero__subtitle">API and raw material supply (fictional)</p>
+
+              <ul class="detail-facts">
+                <li class="detail-facts__item">
+                  <span><span class="detail-facts__term">Sample origin</span><span class="detail-facts__value" data-field="country"></span></span>
+                </li>
+                <li class="detail-facts__item">
+                  <span><span class="detail-facts__term">Illustrative since</span><span class="detail-facts__value" data-field="founded"></span></span>
+                </li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="#business-inquiry" data-attr-href="inquiryLink">Supplier inquiry (demo)</a>
+                <a class="btn btn--ghost" href="api-suppliers.html">Back to the directory</a>
+              </div>
+            </div>
+
+            <figure>
+              <img
+                class="detail-hero__media detail-hero__media--wide"
+                src=""
+                alt=""
+                width="640"
+                height="360"
+                data-attr-src="image"
+                data-attr-alt="imageAlt"
+              />
+              <figcaption class="text-small text-muted mt-4">Illustration only — no real supplier or material is depicted.</figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="container section">
+          <div class="article-layout">
+            <div>
+              <section class="content-block" aria-labelledby="sup-about-title">
+                <h2 class="content-block__title" id="sup-about-title">Supplier overview</h2>
+                <p data-field="about"></p>
+              </section>
+
+              <section class="content-block" aria-labelledby="sup-materials-title">
+                <h2 class="content-block__title" id="sup-materials-title">Sample material listings</h2>
+                <div data-slot="materials"></div>
+              </section>
+
+              <section class="content-block" aria-labelledby="sup-docs-title">
+                <h2 class="content-block__title" id="sup-docs-title">Documentation availability indicators</h2>
+                <div data-slot="documentation"></div>
+                <p class="card__text mt-4 mb-0">
+                  Indicators show that a document type could be available. No specification sheet, safety
+                  data sheet or certificate is provided by this demonstration, and none should be
+                  requested from the fictional contact details shown.
+                </p>
+              </section>
+            </div>
+
+            <aside aria-label="Supplier sidebar">
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Handling and storage notice</h2>
+                <p class="card__text mb-0">
+                  This demonstration provides no chemical handling, storage, transport or disposal
+                  instructions. Real materials require current supplier documentation, local regulations
+                  and trained personnel.
+                </p>
+              </div>
+
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Qualification statement</h2>
+                <p class="card__text mb-0">
+                  The supplier shown is fictional. No audit, qualification, approval or certification is
+                  claimed, and this profile must not be used for procurement decisions.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </article>
+
+      <div class="container section" id="business-inquiry" data-component="inquiry-form" data-fill-legend="Supplier business inquiry (demo)"></div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. This supplier, its material records, specifications, packaging lines and documentation indicators are invented for portfolio presentation. No qualification, certification or approval is claimed or implied."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

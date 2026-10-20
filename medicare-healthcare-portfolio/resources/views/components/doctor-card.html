@@ -1,0 +1,51 @@
+<!-- Doctor card. Every doctor profile, qualification and availability line is
+     fictional demonstration data. Slots:
+       badges       — demo flag, consultation-type badges, prescription-style tags
+       availability — sample availability rows -->
+<template data-template="doctor-card">
+  <article class="card doctor-card">
+    <div class="card__body">
+      <div class="doctor-card__body-header">
+        <img
+          class="doctor-card__avatar"
+          src=""
+          alt=""
+          width="320"
+          height="320"
+          loading="lazy"
+          decoding="async"
+          data-attr-src="image"
+          data-attr-alt="imageAlt"
+        />
+        <div class="doctor-card__identity">
+          <h3 class="card__title" data-field="name"></h3>
+          <p class="card__subtitle" data-field="specialty"></p>
+          <p class="card__text" data-field="qualifications"></p>
+        </div>
+      </div>
+
+      <dl class="card__meta">
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Consultation</dt>
+          <dd class="card__meta-value" data-field="consultation"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Location</dt>
+          <dd class="card__meta-value" data-field="location"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Sample fee</dt>
+          <dd class="card__meta-value" data-field="fee"></dd>
+        </div>
+      </dl>
+
+      <ul class="card__tags" data-slot="badges"></ul>
+      <ul class="availability-list" data-slot="availability"></ul>
+
+      <div class="card__footer">
+        <a class="btn btn--primary btn--sm" data-attr-href="link" data-field="linkLabel">View profile</a>
+        <a class="btn btn--ghost btn--sm" data-attr-href="requestLink">Request appointment</a>
+      </div>
+    </div>
+  </article>
+</template>

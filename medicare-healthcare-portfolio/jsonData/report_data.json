@@ -1,0 +1,56 @@
+[
+  {
+    "id": "MCR-2401-0001",
+    "patientRef": "Demo Patient A",
+    "testId": "test-001",
+    "labId": "lab-001",
+    "collectedOn": "2026-10-14",
+    "expectedOn": "2026-10-15",
+    "status": "Report Ready — Simulated"
+  },
+  {
+    "id": "MCR-2401-0002",
+    "patientRef": "Demo Patient A",
+    "testId": "test-003",
+    "labId": "lab-001",
+    "collectedOn": "2026-10-17",
+    "expectedOn": "2026-10-18",
+    "status": "Processing — Simulated"
+  },
+  {
+    "id": "MCR-2401-0003",
+    "patientRef": "Demo Patient B",
+    "testId": "test-006",
+    "labId": "lab-003",
+    "collectedOn": "2026-10-16",
+    "expectedOn": "2026-10-16",
+    "status": "Sample Received — Demo"
+  },
+  {
+    "id": "MCR-2401-0004",
+    "patientRef": "Demo Patient B",
+    "testId": "test-011",
+    "labId": "lab-001",
+    "collectedOn": "2026-10-18",
+    "expectedOn": "2026-10-18",
+    "status": "Sample Collection Pending — Demo"
+  },
+  {
+    "id": "MCR-2401-0005",
+    "patientRef": "Demo Patient C",
+    "testId": "test-005",
+    "labId": "lab-003",
+    "collectedOn": "2026-10-11",
+    "expectedOn": "2026-10-14",
+    "status": "Report Ready — Simulated"
+  },
+  {
+    "id": "MCR-2401-0006",
+    "patientRef": "Demo Patient D",
+    "testId": "test-012",
+    "labId": "lab-001",
+    "collectedOn": "2026-10-19",
+    "expectedOn": "2026-10-22",
+    "status": "Request Registered — Demo"
+  }
+]

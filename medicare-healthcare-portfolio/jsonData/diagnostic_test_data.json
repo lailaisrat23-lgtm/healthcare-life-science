@@ -1,0 +1,134 @@
+[
+  {
+    "id": "test-001",
+    "name": "Complete Blood Count (CBC)",
+    "category": "Haematology",
+    "labId": "lab-001",
+    "price": 500,
+    "turnaround": "Same day (illustrative)",
+    "preparation": "No fasting required for this sample entry.",
+    "description": "Illustrative description: a CBC panel generally reports counts of blood cell types. The wording here is educational and is not clinical interpretation.",
+    "image": "diagnostics/test-01.svg"
+  },
+  {
+    "id": "test-002",
+    "name": "Fasting Blood Glucose",
+    "category": "Biochemistry",
+    "labId": "lab-001",
+    "price": 250,
+    "turnaround": "Same day (illustrative)",
+    "preparation": "Sample guidance: 8 – 10 hours of fasting is commonly requested for this type of sample. Confirm with a real laboratory.",
+    "description": "Illustrative description: measures glucose in a blood sample collected after a fasting period.",
+    "image": "diagnostics/test-02.svg"
+  },
+  {
+    "id": "test-003",
+    "name": "Lipid Profile",
+    "category": "Biochemistry",
+    "labId": "lab-001",
+    "price": 1200,
+    "turnaround": "24 hours (illustrative)",
+    "preparation": "Sample guidance: fasting may be requested. Confirm with a real laboratory.",
+    "description": "Illustrative description: a group of blood measurements often used alongside clinical assessment.",
+    "image": "diagnostics/test-03.svg"
+  },
+  {
+    "id": "test-004",
+    "name": "Serum Creatinine",
+    "category": "Biochemistry",
+    "labId": "lab-002",
+    "price": 350,
+    "turnaround": "12 hours (illustrative)",
+    "preparation": "No special preparation recorded for this sample entry.",
+    "description": "Illustrative description: a blood measurement commonly grouped with kidney function panels.",
+    "image": "diagnostics/test-04.svg"
+  },
+  {
+    "id": "test-005",
+    "name": "Thyroid Function Panel (TSH, FT3, FT4)",
+    "category": "Hormones",
+    "labId": "lab-001",
+    "price": 1800,
+    "turnaround": "24 – 48 hours (illustrative)",
+    "preparation": "Sample guidance: timing may be discussed with the laboratory.",
+    "description": "Illustrative description: a set of hormone measurements presented as a panel.",
+    "image": "diagnostics/test-05.svg"
+  },
+  {
+    "id": "test-006",
+    "name": "Urine Routine Examination",
+    "category": "Clinical Pathology",
+    "labId": "lab-003",
+    "price": 300,
+    "turnaround": "Same day (illustrative)",
+    "preparation": "Sample guidance: a midstream sample is typically requested.",
+    "description": "Illustrative description: a general urine analysis entry.",
+    "image": "diagnostics/test-06.svg"
+  },
+  {
+    "id": "test-007",
+    "name": "Chest X-Ray (PA view)",
+    "category": "Imaging",
+    "labId": "lab-002",
+    "price": 900,
+    "turnaround": "Same day (illustrative)",
+    "preparation": "Sample guidance: remove metal items as directed by staff.",
+    "description": "Illustrative description: a radiographic imaging entry used for demonstration layout purposes.",
+    "image": "diagnostics/test-07.svg"
+  },
+  {
+    "id": "test-008",
+    "name": "Ultrasound of Whole Abdomen",
+    "category": "Imaging",
+    "labId": "lab-002",
+    "price": 1500,
+    "turnaround": "Same day (illustrative)",
+    "preparation": "Sample guidance: fasting and a full bladder may be requested. Confirm with a real facility.",
+    "description": "Illustrative description: an ultrasound imaging entry used to demonstrate category filtering.",
+    "image": "diagnostics/test-08.svg"
+  },
+  {
+    "id": "test-009",
+    "name": "HbA1c",
+    "category": "Biochemistry",
+    "labId": "lab-001",
+    "price": 950,
+    "turnaround": "24 hours (illustrative)",
+    "preparation": "No fasting recorded for this sample entry.",
+    "description": "Illustrative description: a long-window blood glucose marker listed for demo purposes.",
+    "image": "diagnostics/test-09.svg"
+  },
+  {
+    "id": "test-010",
+    "name": "Liver Function Test",
+    "category": "Biochemistry",
+    "labId": "lab-003",
+    "price": 1400,
+    "turnaround": "48 hours (illustrative)",
+    "preparation": "Sample guidance: fasting may be requested.",
+    "description": "Illustrative description: a grouped blood panel entry.",
+    "image": "diagnostics/test-10.svg"
+  },
+  {
+    "id": "test-011",
+    "name": "Electrocardiogram (ECG)",
+    "category": "Cardiology",
+    "labId": "lab-001",
+    "price": 600,
+    "turnaround": "Immediate tracing, report same day (illustrative)",
+    "preparation": "No preparation recorded for this sample entry.",
+    "description": "Illustrative description: a cardiac tracing entry used to demonstrate the Cardiology category.",
+    "image": "diagnostics/test-11.svg"
+  },
+  {
+    "id": "test-012",
+    "name": "Vitamin D (25-OH)",
+    "category": "Hormones",
+    "labId": "lab-003",
+    "price": 2200,
+    "turnaround": "72 hours (illustrative)",
+    "preparation": "No special preparation recorded for this sample entry.",
+    "description": "Illustrative description: a vitamin measurement entry used to demonstrate premium pricing display.",
+    "image": "diagnostics/test-12.svg"
+  }
+]

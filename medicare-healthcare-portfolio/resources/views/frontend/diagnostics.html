@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diagnostic Test Directory | Fictional Lab Tests | MediCare</title>
+    <meta
+      name="description"
+      content="Browse twelve fictional diagnostic and pathology test entries with search, category and preparation filters, illustrative BDT pricing, sample turnaround times and laboratory associations."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/diagnostics.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Diagnostic Test Directory | Fictional Lab Tests | MediCare" />
+    <meta property="og:description" content="Twelve fictional diagnostic test entries with illustrative pricing and preparation notes." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/diagnostics.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-diagnostics.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/diagnostics.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="diagnostics" data-templates="diagnostic-test-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Diagnostics"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Diagnostic &amp; pathology test directory</h1>
+          <p class="page-header__intro">
+            Twelve fictional test entries across haematology, biochemistry, hormones, imaging and
+            cardiology. Prices, turnaround times and laboratory names are illustrative demonstration
+            values. No test result or clinical interpretation is provided here.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="directory-layout">
+          <aside aria-label="Filter diagnostic tests">
+            <div data-diagnostics-filters></div>
+
+            <div class="info-panel mt-6">
+              <h2 class="sidebar-card__title">Preparation notes</h2>
+              <p class="card__text">
+                Preparation lines in this directory are short, general sample reminders. Always confirm
+                preparation with the real laboratory before any genuine test.
+              </p>
+              <p class="mb-0">
+                <a class="btn btn--secondary btn--sm" href="faq.html">Read the diagnostics FAQ</a>
+              </p>
+            </div>
+          </aside>
+
+          <section aria-labelledby="diagnostics-results-title">
+            <h2 class="visually-hidden" id="diagnostics-results-title">Test search results</h2>
+            <ul class="card-grid" data-diagnostics-results aria-live="polite"></ul>
+            <div data-diagnostics-pagination></div>
+
+            <div class="alert alert--warning mt-8" role="note">
+              <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
+              <div class="alert__body">
+                <strong class="alert__title">Demonstration data — never valid for diagnosis or treatment</strong>
+                <p>
+                  Nothing in this directory represents a real laboratory service, price or clinical
+                  protocol, and no test can be ordered through this site.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. All laboratory names, test prices, turnaround times and preparation notes on this page are illustrative sample data and are not valid for diagnosis or treatment."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

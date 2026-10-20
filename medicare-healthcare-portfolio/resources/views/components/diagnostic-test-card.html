@@ -1,0 +1,45 @@
+<!-- Diagnostic test card. Prices are illustrative BDT values, preparation lines
+     are generic sample guidance, and no result interpretation is offered. -->
+<template data-template="diagnostic-test-card">
+  <article class="card test-card">
+    <figure class="card__media">
+      <img
+        src=""
+        alt=""
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+        data-attr-src="image"
+        data-attr-alt="imageAlt"
+      />
+    </figure>
+    <div class="card__body">
+      <p class="card__subtitle" data-field="category"></p>
+      <h3 class="card__title" data-field="name"></h3>
+
+      <dl class="card__meta">
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Laboratory</dt>
+          <dd class="card__meta-value" data-field="lab"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Turnaround</dt>
+          <dd class="card__meta-value" data-field="turnaround"></dd>
+        </div>
+      </dl>
+
+      <p class="card__text" data-field="preparation"></p>
+      <ul class="card__tags" data-slot="badges"></ul>
+
+      <div class="card__footer">
+        <p class="product-card__price-row">
+          <span class="card__price" data-field="price"></span>
+          <span class="product-card__unit">illustrative price</span>
+        </p>
+        <a class="btn btn--secondary btn--sm" data-attr-href="link" data-field="linkLabel">Test details</a>
+        <a class="btn btn--ghost btn--sm" data-attr-href="requestLink">Request test</a>
+      </div>
+    </div>
+  </article>
+</template>

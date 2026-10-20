@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fictional Product Details | Pharmacy Demo | MediCare</title>
+    <meta
+      name="description"
+      content="An illustrative pharmacy product record showing category, fictional manufacturer, packaging, sample BDT pricing, prescription-required status, warnings and related demonstration products."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/pharmacy.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Fictional Product Details | Pharmacy Demo | MediCare" />
+    <meta property="og:description" content="Illustrative product record with packaging, sample pricing and prescription labelling." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/medicine-details.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/pharmacy.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="medicine-details" data-templates="medicine-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Pharmacy|pharmacy.html;Product details"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article data-detail="medicine">
+        <header class="detail-hero">
+          <div class="container detail-hero__layout">
+            <div>
+              <span class="demo-flag">
+                <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+                <span>Fictional product record</span>
+              </span>
+
+              <h1 class="detail-hero__title mt-4" data-field="name">Fictional product</h1>
+              <p class="detail-hero__subtitle" data-field="category"></p>
+              <ul class="card__tags" data-slot="badges"></ul>
+
+              <p class="card__price mt-6">
+                <span class="price" data-field="price"></span>
+                <span class="product-card__unit" data-field="unit"></span>
+              </p>
+
+              <div class="cluster mt-6">
+                <button class="btn btn--primary" type="button" data-add-to-cart data-attr-data-cart-id="cartId">
+                  Add to cart preview
+                </button>
+                <a class="btn btn--secondary" href="pharmacy.html">Back to the catalogue</a>
+              </div>
+            </div>
+
+            <figure>
+              <img
+                class="detail-hero__media detail-hero__media--wide"
+                src=""
+                alt=""
+                width="640"
+                height="360"
+                data-attr-src="image"
+                data-attr-alt="imageAlt"
+              />
+              <figcaption class="text-small text-muted mt-4">
+                Illustration only. No real product packaging is depicted.
+              </figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="container section">
+          <div class="article-layout">
+            <div>
+              <section class="content-block" aria-labelledby="product-info-title">
+                <h2 class="content-block__title" id="product-info-title">Product information</h2>
+                <p data-field="description"></p>
+                <p class="mb-0">
+                  The paragraph above is catalogue copy written for this portfolio demonstration. It
+                  describes the product record only and is deliberately not treatment guidance.
+                </p>
+              </section>
+
+              <section class="content-block" aria-labelledby="product-spec-title">
+                <h2 class="content-block__title" id="product-spec-title">Specification summary</h2>
+                <div class="table-wrap">
+                  <table class="data-table spec-table">
+                    <caption>Illustrative specification for this fictional record</caption>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Sample generic name</th>
+                        <td data-field="generic"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Catalogue category</th>
+                        <td data-field="category"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Fictional manufacturer</th>
+                        <td data-field="manufacturer"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Product form</th>
+                        <td data-field="form"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Packaging</th>
+                        <td data-field="packaging"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Illustrative price</th>
+                        <td data-field="price"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="content-block" aria-labelledby="product-warnings-title">
+                <h2 class="content-block__title" id="product-warnings-title">Product warnings and demo limits</h2>
+                <div data-slot="warnings"></div>
+              </section>
+            </div>
+
+            <aside aria-label="Product sidebar">
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Prescription status</h2>
+                <ul class="card__tags" data-slot="badgesSidebar"></ul>
+                <p class="card__text mt-4 mb-0">
+                  The prescription-required label is applied to fictional sample records to demonstrate
+                  catalogue presentation. It is not a clinical classification.
+                </p>
+              </div>
+
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Cart preview</h2>
+                <p class="card__text">
+                  Adding this product updates a local preview only. Nothing is ordered, reserved or paid
+                  for.
+                </p>
+                <p class="mb-0">
+                  <a class="btn btn--secondary btn--sm" href="pharmacy.html">Open the catalogue</a>
+                </p>
+              </div>
+
+              <div class="info-panel info-panel--accent mt-6">
+                <h2 class="sidebar-card__title">Not medical advice</h2>
+                <p class="card__text mb-0">
+                  This demonstration cannot recommend a medicine or dosage. Consult a qualified
+                  healthcare professional for any real health concern.
+                </p>
+              </div>
+            </aside>
+          </div>
+
+          <section class="content-block" aria-labelledby="product-related-title">
+            <h2 class="content-block__title" id="product-related-title">Related demonstration products</h2>
+            <div data-slot="related"></div>
+          </section>
+        </div>
+      </article>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

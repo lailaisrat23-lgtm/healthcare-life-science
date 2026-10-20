@@ -1,0 +1,47 @@
+<!-- Clinic / diagnostic centre card. Locations, phone numbers and opening hours
+     are illustrative demonstration values only. -->
+<template data-template="clinic-card">
+  <article class="card clinic-card">
+    <figure class="card__media">
+      <img
+        src=""
+        alt=""
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+        data-attr-src="image"
+        data-attr-alt="imageAlt"
+      />
+    </figure>
+    <div class="card__body">
+      <div class="card__header">
+        <p class="card__subtitle" data-field="type"></p>
+        <h3 class="card__title" data-field="name"></h3>
+      </div>
+
+      <dl class="card__meta">
+        <div class="card__meta-row">
+          <dt class="card__meta-term">City</dt>
+          <dd class="card__meta-value" data-field="city"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Hours</dt>
+          <dd class="card__meta-value" data-field="hours"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Specialists</dt>
+          <dd class="card__meta-value" data-field="doctorCount"></dd>
+        </div>
+      </dl>
+
+      <p class="card__text" data-field="services"></p>
+      <ul class="card__tags" data-slot="badges"></ul>
+
+      <div class="card__footer">
+        <a class="btn btn--secondary btn--sm" data-attr-href="link" data-field="linkLabel">Clinic details</a>
+        <a class="btn btn--ghost btn--sm" data-attr-href="requestLink">Request appointment</a>
+      </div>
+    </div>
+  </article>
+</template>

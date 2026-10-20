@@ -1,0 +1,285 @@
+[
+  {
+    "id": "clinic-001",
+    "name": "MediCare Central Specialist Clinic",
+    "type": "Specialised Clinic",
+    "city": "Dhaka",
+    "address": "House 12, Road 5, Dhanmondi (illustrative address), Dhaka 1205",
+    "phone": "+880 1X00-000001 (demo)",
+    "services": [
+      "Cardiology",
+      "Dermatology",
+      "Internal Medicine",
+      "ECG",
+      "Health Screening"
+    ],
+    "departments": [
+      "Cardiology",
+      "Dermatology",
+      "Internal Medicine",
+      "Diagnostics Support"
+    ],
+    "facilities": [
+      "Wheelchair access",
+      "On-site pharmacy counter",
+      "Waiting lounge",
+      "Sample collection room"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "09:00 – 21:00"
+      },
+      {
+        "day": "Friday",
+        "time": "15:00 – 21:00"
+      }
+    ],
+    "about": "Fictional multi-specialty clinic profile created to demonstrate how a specialist centre could present departments, facilities and consulting hours.",
+    "image": "clinics/clinic-01.svg"
+  },
+  {
+    "id": "clinic-002",
+    "name": "MediCare Family Health Centre",
+    "type": "General Practice",
+    "city": "Dhaka",
+    "address": "Block C, Mirpur 10 (illustrative address), Dhaka 1216",
+    "phone": "+880 1X00-000002 (demo)",
+    "services": [
+      "General Medicine",
+      "Paediatrics",
+      "Vaccination Information",
+      "Basic Pathology"
+    ],
+    "departments": [
+      "General Medicine",
+      "Paediatrics",
+      "Preventive Care"
+    ],
+    "facilities": [
+      "Family waiting area",
+      "Child-friendly consultation room",
+      "Ground floor access"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "08:00 – 20:00"
+      },
+      {
+        "day": "Friday",
+        "time": "16:00 – 20:00"
+      }
+    ],
+    "about": "Fictional family practice profile used to demonstrate general consultation and preventive care listings.",
+    "image": "clinics/clinic-02.svg"
+  },
+  {
+    "id": "clinic-003",
+    "name": "Chattogram Bay Medical Centre",
+    "type": "Multi-specialty Centre",
+    "city": "Chattogram",
+    "address": "Agrabad Commercial Area (illustrative address), Chattogram 4100",
+    "phone": "+880 1X00-000003 (demo)",
+    "services": [
+      "Orthopaedics",
+      "Ophthalmology",
+      "Physiotherapy Information",
+      "Digital X-Ray"
+    ],
+    "departments": [
+      "Orthopaedics",
+      "Ophthalmology",
+      "Rehabilitation"
+    ],
+    "facilities": [
+      "Lift access",
+      "Radiology support room",
+      "Two consultation wings"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "09:30 – 21:30"
+      },
+      {
+        "day": "Friday",
+        "time": "14:00 – 20:00"
+      }
+    ],
+    "about": "Fictional regional medical centre profile demonstrating multi-specialty directory content for Chattogram.",
+    "image": "clinics/clinic-03.svg"
+  },
+  {
+    "id": "clinic-004",
+    "name": "Sylhet Green Valley Clinic",
+    "type": "Specialised Clinic",
+    "city": "Sylhet",
+    "address": "Zindabazar (illustrative address), Sylhet 3100",
+    "phone": "+880 1X00-000004 (demo)",
+    "services": [
+      "Neurology",
+      "Internal Medicine",
+      "EEG Referral Information",
+      "Counselling Support"
+    ],
+    "departments": [
+      "Neurology",
+      "Internal Medicine",
+      "Neuro-diagnostics Support"
+    ],
+    "facilities": [
+      "Quiet consultation rooms",
+      "Wheelchair access",
+      "Patient guidance desk"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "10:00 – 19:00"
+      },
+      {
+        "day": "Friday",
+        "time": "15:00 – 19:00"
+      }
+    ],
+    "about": "Fictional clinic profile demonstrating specialist neurology listing patterns in a regional setting.",
+    "image": "clinics/clinic-04.svg"
+  },
+  {
+    "id": "clinic-005",
+    "name": "Dhaka Women & Child Clinic",
+    "type": "Women and Child Health",
+    "city": "Dhaka",
+    "address": "Green Road (illustrative address), Dhaka 1205",
+    "phone": "+880 1X00-000005 (demo)",
+    "services": [
+      "Gynaecology",
+      "Obstetric Information",
+      "Psychiatry",
+      "Antenatal Guidance"
+    ],
+    "departments": [
+      "Gynaecology & Obstetrics",
+      "Mental Health",
+      "Child Welfare"
+    ],
+    "facilities": [
+      "Private consultation rooms",
+      "Mother care lounge",
+      "Confidential counselling space"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "09:00 – 20:00"
+      },
+      {
+        "day": "Friday",
+        "time": "15:00 – 20:00"
+      }
+    ],
+    "about": "Fictional clinic profile demonstrating women's and children's health service listings with privacy-focussed presentation.",
+    "image": "clinics/clinic-05.svg"
+  },
+  {
+    "id": "clinic-006",
+    "name": "Khulna Riverside Polyclinic",
+    "type": "Polyclinic",
+    "city": "Khulna",
+    "address": "Khan Jahan Ali Road (illustrative address), Khulna 9100",
+    "phone": "+880 1X00-000006 (demo)",
+    "services": [
+      "ENT",
+      "General Medicine",
+      "Basic Diagnostics",
+      "Health Check Packages"
+    ],
+    "departments": [
+      "ENT",
+      "General Medicine",
+      "Diagnostics"
+    ],
+    "facilities": [
+      "Ground floor consultation",
+      "Sample collection point",
+      "Waiting shed"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "09:00 – 18:00"
+      }
+    ],
+    "about": "Fictional polyclinic profile demonstrating how smaller regional facilities could be represented.",
+    "image": "clinics/clinic-06.svg"
+  },
+  {
+    "id": "clinic-007",
+    "name": "Rajshahi City Medical Complex",
+    "type": "Multi-specialty Centre",
+    "city": "Rajshahi",
+    "address": "Shaheb Bazar (illustrative address), Rajshahi 6100",
+    "phone": "+880 1X00-000007 (demo)",
+    "services": [
+      "Endocrinology",
+      "Diabetes Review Information",
+      "Diet Counselling",
+      "Pathology Support"
+    ],
+    "departments": [
+      "Endocrinology",
+      "Internal Medicine",
+      "Nutrition Support"
+    ],
+    "facilities": [
+      "Accessible entrance",
+      "Phlebotomy room",
+      "Health education corner"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "09:00 – 19:00"
+      },
+      {
+        "day": "Friday",
+        "time": "16:00 – 19:00"
+      }
+    ],
+    "about": "Fictional medical complex profile demonstrating chronic condition service listings for the Rajshahi demo entry.",
+    "image": "clinics/clinic-07.svg"
+  },
+  {
+    "id": "clinic-008",
+    "name": "MediCare Diagnostic & Wellness Hub",
+    "type": "Diagnostic Centre",
+    "city": "Dhaka",
+    "address": "Uttara Sector 7 (illustrative address), Dhaka 1230",
+    "phone": "+880 1X00-000008 (demo)",
+    "services": [
+      "Pathology",
+      "Imaging Information",
+      "Health Screening",
+      "Gastroenterology"
+    ],
+    "departments": [
+      "Pathology",
+      "Imaging",
+      "Wellness Screening"
+    ],
+    "facilities": [
+      "Separate sample collection area",
+      "Imaging suite (illustrative)",
+      "Report collection desk"
+    ],
+    "hours": [
+      {
+        "day": "Saturday – Thursday",
+        "time": "07:30 – 21:00"
+      }
+    ],
+    "about": "Fictional diagnostic centre profile used to demonstrate the sample report-tracking workflow.",
+    "image": "clinics/clinic-08.svg"
+  }
+]

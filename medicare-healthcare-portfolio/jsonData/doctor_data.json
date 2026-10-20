@@ -1,0 +1,440 @@
+[
+  {
+    "id": "doc-001",
+    "name": "Dr. Nusrat Jahan",
+    "specialty": "Cardiology",
+    "qualifications": "MBBS, MD (Cardiology) — illustrative",
+    "experienceYears": 12,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-001",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1200,
+    "about": "Fictional profile created for this portfolio demonstration. Describes a sample cardiology practice focused on preventive heart care, follow-up reviews and patient education.",
+    "availability": [
+      {
+        "day": "Sunday",
+        "slots": [
+          "10:00 – 13:00",
+          "17:00 – 20:00"
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          "10:00 – 13:00"
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          "17:00 – 20:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-01.svg"
+  },
+  {
+    "id": "doc-002",
+    "name": "Dr. Arif Hossain",
+    "specialty": "General Medicine",
+    "qualifications": "MBBS, FCPS (Medicine) — illustrative",
+    "experienceYears": 8,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation",
+      "Phone consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-002",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 800,
+    "about": "Fictional sample profile for a general medicine practitioner demonstrating first-visit assessment, common illness review and referral documentation in this demo.",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          "09:00 – 12:00"
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          "16:00 – 20:00"
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          "09:00 – 12:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-02.svg"
+  },
+  {
+    "id": "doc-003",
+    "name": "Dr. Farhana Akter",
+    "specialty": "Dermatology",
+    "qualifications": "MBBS, DDV — illustrative",
+    "experienceYears": 9,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-001",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1000,
+    "about": "Fictional dermatology profile used to demonstrate how skin, hair and nail service listings could be presented in a directory demo.",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          "15:00 – 19:00"
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          "10:00 – 14:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-03.svg"
+  },
+  {
+    "id": "doc-004",
+    "name": "Dr. Tanvir Rahman",
+    "specialty": "Orthopaedics",
+    "qualifications": "MBBS, MS (Orthopaedics) — illustrative",
+    "experienceYears": 14,
+    "consultationTypes": [
+      "In-clinic"
+    ],
+    "city": "Chattogram",
+    "clinicId": "clinic-003",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1300,
+    "about": "Fictional orthopaedic profile demonstrating how joint, spine and rehabilitation service information could be listed in this portfolio demo.",
+    "availability": [
+      {
+        "day": "Sunday",
+        "slots": [
+          "11:00 – 14:00"
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          "11:00 – 14:00"
+        ]
+      },
+      {
+        "day": "Friday",
+        "slots": [
+          "10:00 – 12:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-04.svg"
+  },
+  {
+    "id": "doc-005",
+    "name": "Dr. Sharmin Sultana",
+    "specialty": "Paediatrics",
+    "qualifications": "MBBS, FCPS (Paediatrics) — illustrative",
+    "experienceYears": 10,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-002",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 900,
+    "about": "Fictional paediatric profile demonstrating child health service listings, growth review and immunisation information in the demo directory.",
+    "availability": [
+      {
+        "day": "Sunday",
+        "slots": [
+          "09:30 – 13:00"
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          "09:30 – 13:00"
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          "16:00 – 19:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-05.svg"
+  },
+  {
+    "id": "doc-006",
+    "name": "Dr. Imran Kabir",
+    "specialty": "Neurology",
+    "qualifications": "MBBS, MD (Neurology) — illustrative",
+    "experienceYears": 15,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Sylhet",
+    "clinicId": "clinic-004",
+    "languages": [
+      "Bangla",
+      "English",
+      "Sylheti"
+    ],
+    "fee": 1500,
+    "about": "Fictional neurology profile used to demonstrate specialist listing layouts and sample availability presentation.",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          "10:00 – 13:00"
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          "15:00 – 18:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-06.svg"
+  },
+  {
+    "id": "doc-007",
+    "name": "Dr. Rehana Karim",
+    "specialty": "Gynaecology & Obstetrics",
+    "qualifications": "MBBS, FCPS (Gynae & Obs) — illustrative",
+    "experienceYears": 11,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-005",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1100,
+    "about": "Fictional women's health profile demonstrating how antenatal, postnatal and general gynaecology service listings could appear.",
+    "availability": [
+      {
+        "day": "Sunday",
+        "slots": [
+          "12:00 – 15:00"
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          "12:00 – 15:00"
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          "10:00 – 13:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-07.svg"
+  },
+  {
+    "id": "doc-008",
+    "name": "Dr. Mahmudul Hasan",
+    "specialty": "ENT (Ear, Nose & Throat)",
+    "qualifications": "MBBS, DLO — illustrative",
+    "experienceYears": 7,
+    "consultationTypes": [
+      "In-clinic"
+    ],
+    "city": "Khulna",
+    "clinicId": "clinic-006",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 850,
+    "about": "Fictional ENT profile used to demonstrate regional specialist discovery within the demonstration directory.",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          "16:00 – 20:00"
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          "16:00 – 20:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-08.svg"
+  },
+  {
+    "id": "doc-009",
+    "name": "Dr. Sadia Islam",
+    "specialty": "Psychiatry",
+    "qualifications": "MBBS, MD (Psychiatry) — illustrative",
+    "experienceYears": 9,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-005",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1400,
+    "about": "Fictional mental health profile demonstrating confidential consultation listing patterns. No real clinical service is provided.",
+    "availability": [
+      {
+        "day": "Tuesday",
+        "slots": [
+          "18:00 – 21:00"
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          "18:00 – 21:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-09.svg"
+  },
+  {
+    "id": "doc-010",
+    "name": "Dr. Kamrul Ahsan",
+    "specialty": "Endocrinology & Diabetes",
+    "qualifications": "MBBS, MD (Endocrinology) — illustrative",
+    "experienceYears": 13,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Rajshahi",
+    "clinicId": "clinic-007",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1250,
+    "about": "Fictional endocrinology profile demonstrating how long-term condition follow-up listings could be organised.",
+    "availability": [
+      {
+        "day": "Sunday",
+        "slots": [
+          "09:00 – 12:00"
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          "09:00 – 12:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-10.svg"
+  },
+  {
+    "id": "doc-011",
+    "name": "Dr. Tahmina Chowdhury",
+    "specialty": "Ophthalmology",
+    "qualifications": "MBBS, FCPS (Ophthalmology) — illustrative",
+    "experienceYears": 6,
+    "consultationTypes": [
+      "In-clinic"
+    ],
+    "city": "Chattogram",
+    "clinicId": "clinic-003",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 950,
+    "about": "Fictional eye care profile demonstrating vision screening and follow-up service listing layouts.",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          "10:00 – 13:00"
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          "14:00 – 17:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-11.svg"
+  },
+  {
+    "id": "doc-012",
+    "name": "Dr. Rafiqul Alam",
+    "specialty": "Gastroenterology",
+    "qualifications": "MBBS, MD (Gastroenterology) — illustrative",
+    "experienceYears": 16,
+    "consultationTypes": [
+      "In-clinic",
+      "Video consultation"
+    ],
+    "city": "Dhaka",
+    "clinicId": "clinic-008",
+    "languages": [
+      "Bangla",
+      "English"
+    ],
+    "fee": 1600,
+    "about": "Fictional gastroenterology profile demonstrating digestive health service listings and sample report references.",
+    "availability": [
+      {
+        "day": "Tuesday",
+        "slots": [
+          "11:00 – 14:00"
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          "11:00 – 14:00"
+        ]
+      }
+    ],
+    "image": "doctors/doctor-12.svg"
+  }
+]

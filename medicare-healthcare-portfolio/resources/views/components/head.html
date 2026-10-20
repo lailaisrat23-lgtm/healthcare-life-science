@@ -1,0 +1,75 @@
+<!--
+  components/head.html — metadata convention template (NOT fetched at runtime).
+
+  Why this file is not injected: a document `<head>` must be present in the HTML
+  source before the browser can fetch anything, and search engines need it
+  statically. Every page therefore carries its own `<head>`, authored exactly to
+  the convention below so titles, descriptions, canonicals and Open Graph tags
+  stay consistent across the 24 documents.
+
+  Conventions
+  -----------
+  1. `<title>`            — "Page name | MediCare Integrated Clinic & Telemedicine Platform"
+                            Keep under 60 characters where practical.
+  2. meta description     — Unique per page, 120–158 characters, plain language.
+  3. canonical URL        — Absolute placeholder using https://example.com/ so the
+                            production domain can be swapped in one pass.
+  4. Open Graph           — og:type, og:title, og:description, og:image, og:url per page.
+  5. Stylesheet           — exactly one link, depth-correct for the page location.
+  6. JavaScript           — one `defer` script chain; `ui.js` first because every
+                            other module depends on the shared namespace.
+  7. `data-page` on <body> — the router key documented in execute.md §6.
+
+  Page at the project root:        index.html
+  Page inside resources/views/frontend/: ../  →  ../../../public/...
+
+  Query-string detail pages
+  -------------------------
+  `doctor-details.html?id=…`, `clinic-details.html?id=…`,
+  `medicine-details.html?id=…`, `test-details.html?id=…`,
+  `manufacturer-details.html?id=…` and `supplier-details.html?id=…` render their
+  content from `?id=`. Because a static host cannot pre-render ad-hoc query
+  strings, the documented production SEO strategy is:
+    a) emit a static, crawlable page per record (one HTML file per doctor, clinic,
+       product, test, manufacturer and supplier) in a future static-site build step;
+    b) keep the query-string variant as the client-side fallback for demo links;
+    c) mark the query-string variant `noindex, follow` in a production build so
+       the canonical static page is the only indexed URL;
+    d) list every static detail URL in `sitemap.xml`.
+  The canonical tag in this demo therefore points at the listing page rather than
+  at the query-string URL.
+
+  Example (page inside resources/views/frontend/):
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page name | MediCare Integrated Clinic &amp; Telemedicine Platform</title>
+    <meta
+      name="description"
+      content="Unique 120–158 character description written for this page only, describing its demonstration content."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/page-name.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Page name | MediCare" />
+    <meta property="og:description" content="Same description as the meta description tag." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/page-name.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/PAGE-MODULE.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+</html>

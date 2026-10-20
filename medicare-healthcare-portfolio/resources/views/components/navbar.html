@@ -1,0 +1,59 @@
+<header class="site-header">
+  <div class="container navbar__inner">
+    <a class="navbar__brand" data-link="@home" aria-label="MediCare Integrated Clinic and Telemedicine Platform — home">
+      <img
+        class="navbar__logo"
+        data-asset="images/logo.svg"
+        src=""
+        alt=""
+        width="64"
+        height="64"
+        decoding="async"
+      />
+      <span class="navbar__brand-text">
+        <span>MediCare</span>
+        <span class="navbar__brand-sub">Clinic &amp; Telemedicine</span>
+      </span>
+    </a>
+
+    <button
+      class="navbar__toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+    >
+      <svg class="navbar__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 7h16" />
+        <path d="M4 12h16" />
+        <path d="M4 17h16" />
+      </svg>
+      <span>Menu</span>
+    </button>
+
+    <div class="navbar__panel" id="primary-navigation" data-open="false">
+      <nav aria-label="Primary">
+        <ul class="navbar__list">
+          <li><a class="navbar__link" data-link="@home" data-page-match="home">Home</a></li>
+          <li><a class="navbar__link" data-link="about.html" data-page-match="about">About</a></li>
+          <li><a class="navbar__link" data-link="services.html" data-page-match="services">Services</a></li>
+          <li><a class="navbar__link" data-link="doctors.html" data-page-match="doctors,doctor-details">Doctors</a></li>
+          <li><a class="navbar__link" data-link="clinics.html" data-page-match="clinics,clinic-details">Clinics</a></li>
+          <li><a class="navbar__link" data-link="telemedicine.html" data-page-match="telemedicine">Telemedicine</a></li>
+          <li><a class="navbar__link" data-link="pharmacy.html" data-page-match="pharmacy,medicine-details">Pharmacy</a></li>
+          <li><a class="navbar__link" data-link="diagnostics.html" data-page-match="diagnostics,test-details,report-tracking">Diagnostics</a></li>
+          <li><a class="navbar__link" data-link="contact.html" data-page-match="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a class="btn btn--secondary btn--sm" data-link="patient-portal.html" data-page-match="patient-portal">
+          Patient portal demo
+        </a>
+        <a class="btn btn--primary btn--sm" data-link="doctors.html">Find a doctor</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Live reload anchor for VS Code Live Server; see README "Local development". -->
+</body>

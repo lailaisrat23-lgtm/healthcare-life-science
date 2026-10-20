@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Appointment Request Demo | MediCare Integrated Platform</title>
+    <meta
+      name="description"
+      content="A static appointment request interface with fictional doctor and clinic selection, sample date and time options, validation and confirmation-style demo feedback. No request is transmitted."
+    />
+    <link
+      rel="canonical"
+      href="https://example.com/resources/views/frontend/appointments.html"
+    />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="MediCare Integrated Clinic &amp; Telemedicine Platform"
+    />
+    <meta
+      property="og:title"
+      content="Appointment Request Demo | MediCare Integrated Platform"
+    />
+    <meta
+      property="og:description"
+      content="Practise the appointment request workflow with fictional data. Nothing is transmitted."
+    />
+    <meta
+      property="og:url"
+      content="https://example.com/resources/views/frontend/appointments.html"
+    />
+    <meta
+      property="og:image"
+      content="https://example.com/public/assets/images/hero/hero-healthcare.svg"
+    />
+
+    <link
+      rel="icon"
+      href="../../../public/assets/icons/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/appointments.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="appointments">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Appointments"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">
+            Request an appointment (demonstration)
+          </h1>
+          <p class="page-header__intro">
+            This form shows how an appointment request could be captured and
+            validated. It is entirely static: nothing is transmitted, no record
+            is created, and no clinic, doctor or laboratory receives your
+            information. Use fictional details only.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="article-layout">
+          <form
+            class="form"
+            data-appointment-form
+            data-demo-form
+            data-success-title="Demo request received"
+            novalidate="novalidate"
+          >
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Consultation details</legend>
+              <p class="form__hint">
+                Doctors, clinics and tests are listed from the fictional
+                demonstration dataset.
+              </p>
+
+              <div class="form__grid mt-6">
+                <div class="form__group">
+                  <label class="form__label" for="appt-doctor"
+                    >Fictional doctor
+                    <span class="form__required" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <select
+                    class="form__control"
+                    id="appt-doctor"
+                    name="doctor"
+                    required
+                    data-select="doctor"
+                  >
+                    <option value="">Choose a fictional doctor</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-clinic"
+                    >Fictional clinic</label
+                  >
+                  <select
+                    class="form__control"
+                    id="appt-clinic"
+                    name="clinic"
+                    data-select="clinic"
+                  >
+                    <option value="">Choose a fictional clinic</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-test"
+                    >Diagnostic test (optional)</label
+                  >
+                  <select
+                    class="form__control"
+                    id="appt-test"
+                    name="test"
+                    data-select="test"
+                  >
+                    <option value="">Not applicable to this request</option>
+                  </select>
+                  <p class="form__hint">
+                    Selecting a test changes nothing outside this demonstration.
+                  </p>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-date"
+                    >Sample date
+                    <span class="form__required" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    class="form__control"
+                    type="date"
+                    id="appt-date"
+                    name="date"
+                    required
+                    data-appointment-date
+                  />
+                  <p class="form__hint">
+                    Today or a later date. Past dates are rejected by the demo
+                    validation.
+                  </p>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-time"
+                    >Sample time
+                    <span class="form__required" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <select
+                    class="form__control"
+                    id="appt-time"
+                    name="time"
+                    required
+                    data-select="time"
+                  >
+                    <option value="">Choose a sample time</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__group mt-6">
+                <span class="form__label" id="appt-consultation-label"
+                  >Consultation type
+                  <span class="form__required" aria-hidden="true">*</span></span
+                >
+                <div
+                  class="choice-group"
+                  role="radiogroup"
+                  aria-labelledby="appt-consultation-label"
+                >
+                  <label class="choice" for="appt-type-clinic">
+                    <input
+                      class="choice__input"
+                      type="radio"
+                      id="appt-type-clinic"
+                      name="consultation"
+                      value="In-clinic"
+                      required
+                      data-group-label="a consultation type"
+                    />
+                    <span class="choice__text">
+                      <span class="choice__title">In-clinic consultation</span>
+                      Attending a listed facility in person.
+                    </span>
+                  </label>
+                  <label class="choice" for="appt-type-video">
+                    <input
+                      class="choice__input"
+                      type="radio"
+                      id="appt-type-video"
+                      name="consultation"
+                      value="Video consultation"
+                      required
+                      data-group-label="a consultation type"
+                    />
+                    <span class="choice__text">
+                      <span class="choice__title">Video consultation</span>
+                      A described remote conversation. No video is started by
+                      this demo.
+                    </span>
+                  </label>
+                  <label class="choice" for="appt-type-phone">
+                    <input
+                      class="choice__input"
+                      type="radio"
+                      id="appt-type-phone"
+                      name="consultation"
+                      value="Phone consultation"
+                      required
+                      data-group-label="a consultation type"
+                    />
+                    <span class="choice__text">
+                      <span class="choice__title">Phone consultation</span>
+                      A described voice-only follow-up type. No call is placed.
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form__fieldset mt-8">
+              <legend class="form__legend">Fictional contact details</legend>
+              <p class="form__hint">
+                Enter placeholder information only. Do not type real medical
+                details or real personal data into this demonstration.
+              </p>
+
+              <div class="form__grid mt-6">
+                <div class="form__group">
+                  <label class="form__label" for="appt-name"
+                    >Full name
+                    <span class="form__required" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    class="form__control"
+                    type="text"
+                    id="appt-name"
+                    name="name"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-email"
+                    >Email address
+                    <span class="form__required" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    class="form__control"
+                    type="email"
+                    id="appt-email"
+                    name="email"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-phone"
+                    >Phone number</label
+                  >
+                  <input
+                    class="form__control"
+                    type="tel"
+                    id="appt-phone"
+                    name="phone"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="appt-reason"
+                    >Reason for the request</label
+                  >
+                  <input
+                    class="form__control"
+                    type="text"
+                    id="appt-reason"
+                    name="reason"
+                    autocomplete="off"
+                  />
+                  <p class="form__hint">Optional demonstration text.</p>
+                </div>
+              </div>
+
+              <div class="form__group mt-6">
+                <label class="form__label" for="appt-notes"
+                  >Additional notes</label
+                >
+                <textarea
+                  class="form__control"
+                  id="appt-notes"
+                  name="notes"
+                  rows="4"
+                ></textarea>
+                <p class="form__hint">
+                  Never include real symptoms or medical history in this demo.
+                </p>
+              </div>
+
+              <div class="form__group mt-6">
+                <label class="choice" for="appt-consent">
+                  <input
+                    class="choice__input"
+                    type="checkbox"
+                    id="appt-consent"
+                    name="consent"
+                    required
+                  />
+                  <span class="choice__text">
+                    <span class="choice__title"
+                      >I understand this request is not real</span
+                    >
+                    No appointment will be booked, no confirmation will be
+                    issued, and no information will be sent or stored.
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">
+                Submit demo request
+              </button>
+              <button class="btn btn--secondary" type="reset">
+                Reset form
+              </button>
+              <a class="btn btn--ghost" href="appointment-tracking.html"
+                >Track a sample appointment</a
+              >
+            </div>
+
+            <div data-form-feedback="true"></div>
+          </form>
+
+          <aside aria-label="Request guidance">
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">What happens when you submit</h2>
+              <ol class="link-list">
+                <li>Each field is validated in your browser.</li>
+                <li>A demo reference number is generated at random.</li>
+                <li>A simulated summary is displayed below the form.</li>
+                <li>Nothing is transmitted, stored or shared.</li>
+              </ol>
+            </div>
+
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">Sample appointment IDs</h2>
+              <p class="card__text">
+                These fixed fictional IDs can be used on the tracking page:
+              </p>
+              <ul class="link-list">
+                <li>
+                  <a href="appointment-tracking.html?id=MCA-2401-0001">
+                    MCA-2401-0001
+                  </a>
+                  — Confirmed
+                </li>
+                <li>
+                  <a href="appointment-tracking.html?id=MCA-2401-0002">
+                    MCA-2401-0002
+                  </a>
+                  — Awaiting confirmation
+                </li>
+                <li>
+                  <a href="appointment-tracking.html?id=MCA-2401-0003">
+                    MCA-2401-0003
+                  </a>
+                  — Completed
+                </li>
+                <li>
+                  <a href="appointment-tracking.html?id=MCA-2401-0005">
+                    MCA-2401-0005
+                  </a>
+                  — Cancelled
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-panel info-panel--accent mt-6">
+              <h2 class="sidebar-card__title">Safety reminder</h2>
+              <p class="card__text mb-0">
+                This demonstration cannot help with a real medical situation.
+                Contact qualified professionals or local emergency services for
+                genuine health concerns.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

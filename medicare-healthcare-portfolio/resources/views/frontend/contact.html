@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact the MediCare Demo | Healthcare &amp; Business Inquiries</title>
+    <meta
+      name="description"
+      content="Contact information, healthcare service inquiry options and a validated but non-transmitting demonstration contact form for the MediCare portfolio project."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/contact.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Contact the MediCare Demo | Healthcare &amp; Business Inquiries" />
+    <meta property="og:description" content="Demonstration contact details and a form that validates locally without transmitting anything." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/contact.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="contact">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Contact"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Contact and inquiries</h1>
+          <p class="page-header__intro">
+            Demonstration contact details and an inquiry form that validates locally. Nothing is
+            transmitted and no message reaches any organisation — the details below are fictional
+            placeholders.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="article-layout">
+          <div>
+            <section class="content-block" aria-labelledby="contact-form-title">
+              <h2 class="content-block__title" id="contact-form-title">Send a demonstration inquiry</h2>
+              <div data-component="inquiry-form" data-fill-legend="Inquiry details (demonstration)"></div>
+            </section>
+          </div>
+
+          <aside aria-label="Contact details">
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">Contact information</h2>
+              <div data-component="contact-info"></div>
+            </div>
+
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">Healthcare service inquiries</h2>
+              <ul class="link-list">
+                <li><a href="doctors.html">Doctor directory questions</a></li>
+                <li><a href="clinics.html">Clinic listings</a></li>
+                <li><a href="diagnostics.html">Diagnostic services</a></li>
+                <li><a href="appointments.html">Appointment request workflow</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h2 class="sidebar-card__title">Business inquiries</h2>
+              <ul class="link-list">
+                <li><a href="pharmaceutical-manufacturers.html">Pharmaceutical manufacturing</a></li>
+                <li><a href="api-suppliers.html">API and raw material supply</a></li>
+                <li><a href="pharmacy.html">Pharmacy catalogue</a></li>
+                <li><a href="about.html">Platform overview</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <section class="content-block mt-8" aria-labelledby="contact-notes-title">
+          <h2 class="content-block__title" id="contact-notes-title">What this demonstration does not do</h2>
+          <div class="grid grid--2">
+            <div class="info-panel">
+              <h3 class="card__title">No transmission</h3>
+              <p class="card__text mb-0">
+                Submitted values are validated in the browser, used to render a confirmation-style
+                message, and then discarded. No network request is made.
+              </p>
+            </div>
+            <div class="info-panel info-panel--accent">
+              <h3 class="card__title">No medical support</h3>
+              <p class="card__text mb-0">
+                This demonstration cannot answer medical questions. For real concerns, contact qualified
+                healthcare professionals or local emergency services.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. All contact details are placeholders, and the form on this page validates locally without transmitting or storing anything."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

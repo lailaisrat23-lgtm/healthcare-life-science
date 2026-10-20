@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Demo appointment status updated",
+    "time": "Simulated, 2 hours ago",
+    "text": "Appointment MCA-2401-0002 moved to “Awaiting Confirmation — Demo”."
+  },
+  {
+    "title": "Sample report ready",
+    "time": "Simulated, 1 day ago",
+    "text": "Report MCR-2401-0001 is marked “Report Ready — Simulated”."
+  },
+  {
+    "title": "Guide added",
+    "time": "Simulated, 2 days ago",
+    "text": "Preparation guidance was added to two diagnostic test entries."
+  },
+  {
+    "title": "Catalogue update",
+    "time": "Simulated, 4 days ago",
+    "text": "Two demonstration pharmacy products received prescription-required labels."
+  }
+]

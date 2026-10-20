@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fictional Diagnostic Test Details | MediCare Demo</title>
+    <meta
+      name="description"
+      content="An illustrative diagnostic test record describing what the test generally measures, sample preparation notes, illustrative BDT pricing, sample turnaround time and laboratory association."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/diagnostics.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Fictional Diagnostic Test Details | MediCare Demo" />
+    <meta property="og:description" content="Illustrative test information with preparation notes and sample pricing." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/test-details.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-diagnostics.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/diagnostics.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="test-details" data-templates="diagnostic-test-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Diagnostics|diagnostics.html;Test details"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article data-detail="test">
+        <header class="detail-hero">
+          <div class="container detail-hero__layout">
+            <div>
+              <span class="demo-flag">
+                <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+                <span>Fictional test entry</span>
+              </span>
+
+              <h1 class="detail-hero__title mt-4" data-field="name">Fictional diagnostic test</h1>
+              <p class="detail-hero__subtitle" data-field="category"></p>
+              <ul class="card__tags" data-slot="badges"></ul>
+
+              <p class="card__price mt-6">
+                <span class="price" data-field="price"></span>
+                <span class="product-card__unit">illustrative price</span>
+              </p>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="appointments.html" data-attr-href="requestLink">Request this test (demo)</a>
+                <a class="btn btn--secondary" href="report-tracking.html">Track a sample report</a>
+                <a class="btn btn--ghost" href="diagnostics.html">Back to the directory</a>
+              </div>
+            </div>
+
+            <figure>
+              <img
+                class="detail-hero__media detail-hero__media--wide"
+                src=""
+                alt=""
+                width="640"
+                height="360"
+                data-attr-src="image"
+                data-attr-alt="imageAlt"
+              />
+              <figcaption class="text-small text-muted mt-4">
+                Original illustration created for this portfolio demonstration.
+              </figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="container section">
+          <div class="article-layout">
+            <div>
+              <section class="content-block" aria-labelledby="test-measures-title">
+                <h2 class="content-block__title" id="test-measures-title">What this test generally measures</h2>
+                <p data-field="description"></p>
+                <p class="mb-0">
+                  This is general educational wording about the category of test only. It is not a
+                  result, a diagnosis or a personal interpretation.
+                </p>
+              </section>
+
+              <section class="content-block" aria-labelledby="test-preparation-title">
+                <h2 class="content-block__title" id="test-preparation-title">Sample preparation information</h2>
+                <div class="info-panel info-panel--accent">
+                  <p class="mb-0" data-field="preparation"></p>
+                </div>
+                <p class="mt-4 mb-0">
+                  Preparation requirements vary by facility and by clinical context. Always confirm the
+                  instructions given by the real laboratory performing your test.
+                </p>
+              </section>
+
+              <section class="content-block" aria-labelledby="test-logistics-title">
+                <h2 class="content-block__title" id="test-logistics-title">Sample turnaround and laboratory</h2>
+                <div class="table-wrap">
+                  <table class="data-table spec-table">
+                    <caption>Illustrative service details for this fictional test entry</caption>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Sample turnaround</th>
+                        <td data-field="turnaround"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sample laboratory</th>
+                        <td data-field="lab"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Laboratory city</th>
+                        <td data-field="labCity"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Laboratory turnaround window</th>
+                        <td data-field="labTurnaround"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h3 class="content-block__title mt-8">Laboratory services (illustrative)</h3>
+                <div data-slot="labServices"></div>
+              </section>
+
+              <section class="content-block" aria-labelledby="test-disclaimer-title">
+                <h2 class="content-block__title" id="test-disclaimer-title">Medical disclaimer</h2>
+                <div class="alert alert--warning" role="note">
+                  <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
+                  <div class="alert__body">
+                    <strong class="alert__title">Not clinical guidance</strong>
+                    <p>
+                      This page does not provide patient-specific interpretation, reference ranges or
+                      results. It is part of a static portfolio demonstration and cannot be used for
+                      diagnosis, screening or treatment decisions.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <aside aria-label="Test sidebar">
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">At a glance</h2>
+                <ul class="detail-facts">
+                  <li class="detail-facts__item">
+                    <span><span class="detail-facts__term">Category</span><span class="detail-facts__value" data-field="category"></span></span>
+                  </li>
+                  <li class="detail-facts__item">
+                    <span><span class="detail-facts__term">Illustrative price</span><span class="detail-facts__value" data-field="price"></span></span>
+                  </li>
+                  <li class="detail-facts__item">
+                    <span><span class="detail-facts__term">Sample turnaround</span><span class="detail-facts__value" data-field="turnaround"></span></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Before requesting a test</h2>
+                <ul class="link-list">
+                  <li>Confirm the requirement with a qualified professional.</li>
+                  <li>Check the real laboratory's preparation instructions.</li>
+                  <li>Remember that no request on this site is transmitted.</li>
+                </ul>
+                <p class="mb-0">
+                  <a class="btn btn--secondary btn--sm" href="report-tracking.html">Open report tracking demo</a>
+                </p>
+              </div>
+            </aside>
+          </div>
+
+          <section class="content-block" aria-labelledby="test-related-title">
+            <h2 class="content-block__title" id="test-related-title">Related demonstration tests</h2>
+            <div data-slot="related"></div>
+          </section>
+        </div>
+      </article>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

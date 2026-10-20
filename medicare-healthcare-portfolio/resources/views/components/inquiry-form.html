@@ -1,0 +1,91 @@
+<!-- Reusable inquiry form (contact page, manufacturer details, supplier details).
+     Marked with data-demo-form so forms.js attaches validation and demo-only
+     feedback. Nothing is transmitted: submission is stopped locally.
+
+     Optional per-instance overrides are supplied through data-fill-* attributes
+     on the placeholder element, for example:
+       data-fill-title="Supplier inquiry"
+       data-fill-intro="Sample inquiry form for a fictional supplier."
+       data-fill-submit="Send demo inquiry" -->
+<form class="form" data-demo-form data-success-title="Demo inquiry received" novalidate="novalidate">
+  <fieldset class="form__fieldset">
+    <legend class="form__legend" data-field="legend">Inquiry details</legend>
+    <p class="form__hint" data-field="intro">
+      Demonstration form only. Your entries stay in this browser and are never sent anywhere.
+    </p>
+
+    <div class="form__grid mt-6">
+      <div class="form__group">
+        <label class="form__label" for="inquiry-name">Full name <span class="form__required" aria-hidden="true">*</span></label>
+        <input class="form__control" type="text" id="inquiry-name" name="name" autocomplete="name" required />
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="inquiry-email">Email address <span class="form__required" aria-hidden="true">*</span></label>
+        <input class="form__control" type="email" id="inquiry-email" name="email" autocomplete="email" required />
+        <p class="form__hint">Use a fictional address such as name@example.com.</p>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="inquiry-phone">Phone number</label>
+        <input class="form__control" type="tel" id="inquiry-phone" name="phone" autocomplete="tel" />
+        <p class="form__hint">Optional in this demonstration.</p>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="inquiry-organisation">Organisation</label>
+        <input class="form__control" type="text" id="inquiry-organisation" name="organisation" autocomplete="organization" />
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="inquiry-subject">Inquiry subject <span class="form__required" aria-hidden="true">*</span></label>
+        <select class="form__control" id="inquiry-subject" name="subject" required>
+          <option value="">Choose a subject</option>
+          <option value="General healthcare question">General healthcare question</option>
+          <option value="Appointment or clinic information">Appointment or clinic information</option>
+          <option value="Diagnostic services">Diagnostic services</option>
+          <option value="Pharmacy catalogue">Pharmacy catalogue</option>
+          <option value="Pharmaceutical manufacturing">Pharmaceutical manufacturing</option>
+          <option value="API or raw material supply">API or raw material supply</option>
+          <option value="Technical feedback">Technical feedback</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="inquiry-reference">Reference (optional)</label>
+        <input class="form__control" type="text" id="inquiry-reference" name="reference" />
+        <p class="form__hint">For example a demo appointment ID such as MCA-2401-0001.</p>
+      </div>
+    </div>
+
+    <div class="form__group mt-6">
+      <label class="form__label" for="inquiry-message">Message <span class="form__required" aria-hidden="true">*</span></label>
+      <textarea
+        class="form__control"
+        id="inquiry-message"
+        name="message"
+        rows="6"
+        required
+        data-min-length="20"
+      ></textarea>
+      <p class="form__hint">At least 20 characters, written in your own words. Do not include real medical information.</p>
+    </div>
+
+    <div class="form__group mt-6">
+      <label class="choice" for="inquiry-consent">
+        <input class="choice__input" type="checkbox" id="inquiry-consent" name="consent" required />
+        <span class="choice__text">
+          <span class="choice__title">I understand this is a static portfolio demonstration</span>
+          No appointment, inquiry, prescription or order will be created and no data will be stored.
+        </span>
+      </label>
+    </div>
+  </fieldset>
+
+  <div class="form__actions">
+    <button class="btn btn--primary" type="submit" data-field="submit">Send demo inquiry</button>
+    <button class="btn btn--secondary" type="reset">Reset form</button>
+  </div>
+
+  <div data-form-feedback="true"></div>
+</form>

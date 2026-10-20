@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Appointment Status Tracking Demo | MediCare Platform</title>
+    <meta
+      name="description"
+      content="Look up a fictional demonstration appointment ID to see how a simulated status timeline could be presented, from draft request through confirmation to completion or cancellation."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/appointment-tracking.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Appointment Status Tracking Demo | MediCare Platform" />
+    <meta property="og:description" content="Simulated appointment status lookup using fixed fictional sample IDs." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/appointment-tracking.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/appointments.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="appointment-tracking">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Appointments|appointments.html;Tracking"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Appointment status tracking (simulated)</h1>
+          <p class="page-header__intro">
+            Search a fictional sample appointment ID to see how a status timeline could be presented.
+            This lookup runs entirely in your browser against fixed demonstration records — no real
+            appointment exists and no booking system is queried.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <form class="tracking-panel" novalidate="novalidate" data-tracking-form>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Look up a demonstration appointment</legend>
+            <div class="tracking-panel__form">
+              <div class="form__group">
+                <label class="form__label" for="tracking-id">Demonstration appointment ID</label>
+                <input
+                  class="form__control"
+                  type="text"
+                  id="tracking-id"
+                  name="appointmentId"
+                  placeholder="For example: MCA-2401-0001"
+                  autocomplete="off"
+                  data-tracking-input
+                />
+                <p class="form__hint">
+                  IDs are fictional. Any other value returns a “not recognised” message.
+                </p>
+              </div>
+              <div class="form__group">
+                <button class="btn btn--primary" type="submit">Check simulated status</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <section class="mt-8" aria-labelledby="sample-ids-title">
+          <h2 class="content-block__title" id="sample-ids-title">Sample appointment IDs</h2>
+          <div class="cluster">
+            <button class="btn btn--secondary btn--sm" type="button" data-tracking-sample="MCA-2401-0001">
+              MCA-2401-0001 · Confirmed
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-tracking-sample="MCA-2401-0002">
+              MCA-2401-0002 · Awaiting confirmation
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-tracking-sample="MCA-2401-0003">
+              MCA-2401-0003 · Completed
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-tracking-sample="MCA-2401-0004">
+              MCA-2401-0004 · Request received
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-tracking-sample="MCA-2401-0005">
+              MCA-2401-0005 · Cancelled
+            </button>
+            <button class="btn btn--secondary btn--sm" type="button" data-tracking-sample="MCA-2401-0006">
+              MCA-2401-0006 · Draft request
+            </button>
+          </div>
+        </section>
+
+        <section class="mt-8" aria-labelledby="tracking-result-title">
+          <h2 class="content-block__title" id="tracking-result-title">Simulated status result</h2>
+          <div data-tracking-result aria-live="polite"></div>
+        </section>
+
+        <section class="mt-8" aria-labelledby="tracking-stages-title">
+          <h2 class="content-block__title" id="tracking-stages-title">Status labels used in this simulation</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption>Simulated appointment statuses and what they represent in this demonstration</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Status label</th>
+                  <th scope="col">Meaning in the simulation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Request Draft</th>
+                  <td>A request that was started but never submitted. Nothing exists outside the page.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Request Received — Demo</th>
+                  <td>A fictional request recorded locally. No clinic has been contacted.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Awaiting Confirmation — Demo</th>
+                  <td>An illustrative holding state showing what “pending” could look like.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Confirmed — Simulated</th>
+                  <td>A simulated confirmation. No real appointment is confirmed.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Completed — Simulated</th>
+                  <td>A simulated completion marker for a past sample record.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cancelled — Simulated</th>
+                  <td>A simulated cancellation, shown with an icon and text rather than colour alone.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="alert alert--warning mt-8" role="note">
+          <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
+          <div class="alert__body">
+            <strong class="alert__title">No real appointment can be created or tracked here</strong>
+            <p>
+              This page exists to demonstrate interface states. It does not connect to a scheduling
+              system and cannot look up a real booking.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

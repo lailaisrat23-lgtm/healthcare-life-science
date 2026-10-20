@@ -1,0 +1,38 @@
+<!-- Appointment card. The status badge is injected into the "status" slot by
+     MediCareUI.statusBadge(), which always pairs an icon with a text label.
+     Simulated statuses are labelled so they can never be read as a real booking. -->
+<template data-template="appointment-card">
+  <article class="appointment-card">
+    <div class="appointment-card__top">
+      <h3 class="appointment-card__title" data-field="title"></h3>
+      <span data-slot="status"></span>
+    </div>
+
+    <p class="appointment-card__id" data-field="id"></p>
+
+    <dl class="appointment-card__meta">
+      <div class="card__meta-row">
+        <dt class="card__meta-term">Sample date</dt>
+        <dd class="card__meta-value" data-field="date"></dd>
+      </div>
+      <div class="card__meta-row">
+        <dt class="card__meta-term">Sample time</dt>
+        <dd class="card__meta-value" data-field="time"></dd>
+      </div>
+      <div class="card__meta-row">
+        <dt class="card__meta-term">Consultation</dt>
+        <dd class="card__meta-value" data-field="type"></dd>
+      </div>
+      <div class="card__meta-row">
+        <dt class="card__meta-term">Clinic</dt>
+        <dd class="card__meta-value" data-field="clinic"></dd>
+      </div>
+    </dl>
+
+    <p class="card__text" data-field="note"></p>
+
+    <div class="card__footer">
+      <a class="btn btn--secondary btn--sm" data-attr-href="link" data-field="linkLabel">View details</a>
+    </div>
+  </article>
+</template>

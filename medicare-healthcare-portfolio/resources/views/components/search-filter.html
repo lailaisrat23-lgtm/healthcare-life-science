@@ -1,0 +1,88 @@
+<!-- Shared search / sort / filter panel. Built by
+     MediCareUI.createFilterPanel(config), which appends each directory's own
+     filter selects into the [data-slot="filters"] region and writes the live
+     result count into [data-results-count].
+
+     Contract used by the renderer:
+       data-filter="search"   text input bound to the search term
+       data-filter="sort"     select populated from config.sortOptions
+       data-filter-clear      resets every control
+       data-results-count     live region announcing the filtered total
+       data-field="…"         text supplied per directory (title and label) -->
+<template data-template="search-filter">
+  <form
+    class="filter-panel"
+    role="search"
+    aria-label="Search and filter results"
+    data-filter-panel="true"
+    novalidate="novalidate"
+  >
+    <div class="filter-panel__head">
+      <h2 class="filter-panel__title">
+        <svg
+          class="filter-panel__title-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path d="M3 5h18" />
+          <path d="M7 12h10" />
+          <path d="M10 19h4" />
+        </svg>
+        <span data-field="panelTitle">Find and filter</span>
+      </h2>
+      <button class="filter-panel__clear" type="button" data-filter-clear>Clear all</button>
+    </div>
+
+    <div class="filter-panel__fields">
+      <div class="form__group">
+        <label class="form__label" for="filter-search" data-field="searchLabel">Search</label>
+        <span class="input-with-icon">
+          <svg
+            class="input-with-icon__icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+          <input
+            class="form__control"
+            type="search"
+            id="filter-search"
+            name="search"
+            data-filter="search"
+            data-attr-placeholder="searchPlaceholder"
+            autocomplete="off"
+          />
+        </span>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="filter-sort">Sort results</label>
+        <select class="form__control" id="filter-sort" name="sort" data-filter="sort"></select>
+      </div>
+
+      <div class="filter-panel__filters" data-slot="filters"></div>
+    </div>
+
+    <div class="filter-panel__foot">
+      <p class="results-count" data-results-count role="status"></p>
+      <p class="filter-empty-note">Filters run in your browser. Nothing is sent or saved.</p>
+    </div>
+  </form>
+</template>
+
+<!-- Live reload anchor for VS Code Live Server; see README "Local development". -->
+</body>

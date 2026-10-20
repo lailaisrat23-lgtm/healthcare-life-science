@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Illustrated placeholder portrait for a fictional doctor profile">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f8f2"/>
+      <stop offset="1" stop-color="#dcead9"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#pbg)"/>
+  <circle cx="160" cy="214" r="96" fill="#1f6f4f" opacity="0.85"/>
+  <circle cx="160" cy="116" r="52" fill="#1f6f4f" opacity="0.95"/>
+  <circle cx="160" cy="116" r="66" fill="none" stroke="#0b5d63" stroke-width="3" opacity="0.4"/>
+  <rect x="232" y="232" width="60" height="60" rx="16" fill="#0b5d63" opacity="0.92"/>
+  <path d="M262 245v34M245 262h34" stroke="#ffffff" stroke-width="9" stroke-linecap="round" fill="none"/>
+</svg>

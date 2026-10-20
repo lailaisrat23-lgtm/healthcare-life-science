@@ -1,0 +1,299 @@
+[
+  {
+    "id": "med-001",
+    "name": "Demo Paracetamol 500 mg Tablet",
+    "generic": "Paracetamol",
+    "category": "Over-the-counter",
+    "manufacturer": "Northbridge Pharmaceuticals Ltd. (fictional)",
+    "form": "Tablet",
+    "packaging": "Blister strip of 10 tablets",
+    "price": 30,
+    "unit": "per strip",
+    "prescriptionRequired": false,
+    "description": "Illustrative product record showing how an over-the-counter entry could be described in a pharmacy catalogue. This is catalogue copy only and is not medical advice.",
+    "warnings": [
+      "Follow the printed label instructions on any real product.",
+      "Sample entry: no dosage guidance is provided on this demonstration site."
+    ],
+    "relatedIds": [
+      "med-004",
+      "med-010"
+    ],
+    "image": "pharmacy/product-01.svg"
+  },
+  {
+    "id": "med-002",
+    "name": "Demo Omeprazole 20 mg Capsule",
+    "generic": "Omeprazole",
+    "category": "Prescription Medicine",
+    "manufacturer": "Delta Life Sciences Pvt. Ltd. (fictional)",
+    "form": "Capsule",
+    "packaging": "Blister strip of 10 capsules",
+    "price": 65,
+    "unit": "per strip",
+    "prescriptionRequired": true,
+    "description": "Illustrative catalogue entry for a prescription-only category product, used to demonstrate prescription labelling in the storefront.",
+    "warnings": [
+      "Prescription-required label applies to this sample entry.",
+      "No usage information is provided on this portfolio demonstration."
+    ],
+    "relatedIds": [
+      "med-009",
+      "med-005"
+    ],
+    "image": "pharmacy/product-02.svg"
+  },
+  {
+    "id": "med-003",
+    "name": "Demo Montelukast 10 mg Tablet",
+    "generic": "Montelukast",
+    "category": "Prescription Medicine",
+    "manufacturer": "Apex Formulations Ltd. (fictional)",
+    "form": "Tablet",
+    "packaging": "Blister strip of 10 tablets",
+    "price": 140,
+    "unit": "per strip",
+    "prescriptionRequired": true,
+    "description": "Illustrative sample product record used to demonstrate respiratory category listings and prescription badges.",
+    "warnings": [
+      "Prescription-required label applies to this sample entry."
+    ],
+    "relatedIds": [
+      "med-005",
+      "med-002"
+    ],
+    "image": "pharmacy/product-03.svg"
+  },
+  {
+    "id": "med-004",
+    "name": "Demo Paracetamol Syrup 60 ml",
+    "generic": "Paracetamol",
+    "category": "Mother & Baby",
+    "manufacturer": "GreenCross Biotech Ltd. (fictional)",
+    "form": "Oral suspension",
+    "packaging": "Bottle of 60 ml with measuring cup",
+    "price": 55,
+    "unit": "per bottle",
+    "prescriptionRequired": false,
+    "description": "Illustrative paediatric-format product record demonstrating how pack sizes and formats can be displayed.",
+    "warnings": [
+      "Sample catalogue entry. Always follow professional guidance for real products."
+    ],
+    "relatedIds": [
+      "med-001",
+      "med-010"
+    ],
+    "image": "pharmacy/product-04.svg"
+  },
+  {
+    "id": "med-005",
+    "name": "Demo Fexofenadine 120 mg Tablet",
+    "generic": "Fexofenadine",
+    "category": "Over-the-counter",
+    "manufacturer": "Northbridge Pharmaceuticals Ltd. (fictional)",
+    "form": "Tablet",
+    "packaging": "Blister strip of 10 tablets",
+    "price": 90,
+    "unit": "per strip",
+    "prescriptionRequired": false,
+    "description": "Illustrative allergy-category listing used to demonstrate category filtering in the demonstration storefront.",
+    "warnings": [
+      "Sample catalogue entry; no recommendations are made on this site."
+    ],
+    "relatedIds": [
+      "med-003",
+      "med-006"
+    ],
+    "image": "pharmacy/product-05.svg"
+  },
+  {
+    "id": "med-006",
+    "name": "Demo Vitamin C 250 mg Tablet",
+    "generic": "Ascorbic acid",
+    "category": "Vitamins & Supplements",
+    "manufacturer": "Sunrise Pharma Industries (fictional)",
+    "form": "Chewable tablet",
+    "packaging": "Bottle of 30 tablets",
+    "price": 120,
+    "unit": "per bottle",
+    "prescriptionRequired": false,
+    "description": "Illustrative supplement record used to demonstrate how wellness products could be presented with clear demo labelling.",
+    "warnings": [
+      "Supplements are presented for catalogue demonstration only."
+    ],
+    "relatedIds": [
+      "med-012",
+      "med-005"
+    ],
+    "image": "pharmacy/product-06.svg"
+  },
+  {
+    "id": "med-007",
+    "name": "Demo Metronidazole 400 mg Tablet",
+    "generic": "Metronidazole",
+    "category": "Prescription Medicine",
+    "manufacturer": "Delta Life Sciences Pvt. Ltd. (fictional)",
+    "form": "Tablet",
+    "packaging": "Blister strip of 10 tablets",
+    "price": 75,
+    "unit": "per strip",
+    "prescriptionRequired": true,
+    "description": "Illustrative anti-infective category record demonstrating prescription-required presentation.",
+    "warnings": [
+      "Prescription-required label applies to this sample entry."
+    ],
+    "relatedIds": [
+      "med-002",
+      "med-009"
+    ],
+    "image": "pharmacy/product-07.svg"
+  },
+  {
+    "id": "med-008",
+    "name": "Demo Losartan 50 mg Tablet",
+    "generic": "Losartan potassium",
+    "category": "Prescription Medicine",
+    "manufacturer": "Apex Formulations Ltd. (fictional)",
+    "form": "Film-coated tablet",
+    "packaging": "Blister strip of 10 tablets",
+    "price": 110,
+    "unit": "per strip",
+    "prescriptionRequired": true,
+    "description": "Illustrative cardiovascular category record used to demonstrate long-term therapy listing patterns.",
+    "warnings": [
+      "Prescription-required label applies to this sample entry."
+    ],
+    "relatedIds": [
+      "med-011",
+      "med-009"
+    ],
+    "image": "pharmacy/product-08.svg"
+  },
+  {
+    "id": "med-009",
+    "name": "Demo Esomeprazole 20 mg Capsule",
+    "generic": "Esomeprazole",
+    "category": "Prescription Medicine",
+    "manufacturer": "MediCore Sterile Products Ltd. (fictional)",
+    "form": "Capsule",
+    "packaging": "Blister strip of 10 capsules",
+    "price": 130,
+    "unit": "per strip",
+    "prescriptionRequired": true,
+    "description": "Illustrative gastro category record demonstrating a second manufacturer entry in the same category.",
+    "warnings": [
+      "Prescription-required label applies to this sample entry."
+    ],
+    "relatedIds": [
+      "med-002",
+      "med-007"
+    ],
+    "image": "pharmacy/product-09.svg"
+  },
+  {
+    "id": "med-010",
+    "name": "Demo Oral Rehydration Salt Sachet",
+    "generic": "Oral rehydration salts",
+    "category": "Over-the-counter",
+    "manufacturer": "GreenCross Biotech Ltd. (fictional)",
+    "form": "Powder for solution",
+    "packaging": "Carton of 10 sachets",
+    "price": 45,
+    "unit": "per carton",
+    "prescriptionRequired": false,
+    "description": "Illustrative rehydration product record demonstrating how sachet-format packaging is described.",
+    "warnings": [
+      "Sample catalogue entry; no preparation instructions are provided."
+    ],
+    "relatedIds": [
+      "med-001",
+      "med-004"
+    ],
+    "image": "pharmacy/product-10.svg"
+  },
+  {
+    "id": "med-011",
+    "name": "Demo Insulin Cartridge 100 IU/ml",
+    "generic": "Human insulin (illustrative)",
+    "category": "Prescription Medicine",
+    "manufacturer": "MediCore Sterile Products Ltd. (fictional)",
+    "form": "Cartridge",
+    "packaging": "Pack of 5 cartridges",
+    "price": 950,
+    "unit": "per pack",
+    "prescriptionRequired": true,
+    "description": "Illustrative cold-chain category record demonstrating how temperature-sensitive products are flagged. No storage or dosing advice is given.",
+    "warnings": [
+      "Prescription-required label applies to this sample entry.",
+      "No handling or storage instructions are provided on this demonstration site."
+    ],
+    "relatedIds": [
+      "med-008",
+      "med-009"
+    ],
+    "image": "pharmacy/product-11.svg"
+  },
+  {
+    "id": "med-012",
+    "name": "Demo Digital Blood Pressure Monitor",
+    "generic": "Home health device",
+    "category": "Medical Devices",
+    "manufacturer": "Sunrise Pharma Industries (fictional)",
+    "form": "Upper-arm monitor",
+    "packaging": "Boxed device with cuff and storage case",
+    "price": 2850,
+    "unit": "per device",
+    "prescriptionRequired": false,
+    "description": "Illustrative device record demonstrating non-medicine catalogue entries. Demo specifications only.",
+    "warnings": [
+      "Sample specification entry; not a validated measuring device."
+    ],
+    "relatedIds": [
+      "med-006",
+      "med-013"
+    ],
+    "image": "pharmacy/product-12.svg"
+  },
+  {
+    "id": "med-013",
+    "name": "Demo Disposable Face Mask (Box of 20)",
+    "generic": "Protective equipment",
+    "category": "First Aid & Hygiene",
+    "manufacturer": "GreenCross Biotech Ltd. (fictional)",
+    "form": "Disposable mask",
+    "packaging": "Box of 20 pieces",
+    "price": 240,
+    "unit": "per box",
+    "prescriptionRequired": false,
+    "description": "Illustrative hygiene product record used to demonstrate the First Aid & Hygiene category in this demo.",
+    "warnings": [
+      "Sample catalogue entry; no protective performance claims are made."
+    ],
+    "relatedIds": [
+      "med-014",
+      "med-012"
+    ],
+    "image": "pharmacy/product-13.svg"
+  },
+  {
+    "id": "med-014",
+    "name": "Demo Alcohol Hand Sanitiser 500 ml",
+    "generic": "Hand sanitiser",
+    "category": "First Aid & Hygiene",
+    "manufacturer": "Northbridge Pharmaceuticals Ltd. (fictional)",
+    "form": "Liquid",
+    "packaging": "Pump bottle of 500 ml",
+    "price": 320,
+    "unit": "per bottle",
+    "prescriptionRequired": false,
+    "description": "Illustrative hygiene product record demonstrating how bottle formats and volumes are presented.",
+    "warnings": [
+      "Sample catalogue entry; no efficacy claims are made."
+    ],
+    "relatedIds": [
+      "med-013",
+      "med-006"
+    ],
+    "image": "pharmacy/product-14.svg"
+  }
+]

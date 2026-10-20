@@ -1,0 +1,27 @@
+<!-- Accessible empty / no-results state. Rendered by MediCareUI.emptyState({...}).
+     The container carries role="status" so the message reaches assistive
+     technology when a search or filter changes the result set. -->
+<template data-template="empty-state">
+  <div class="empty-state" role="status">
+    <svg
+      class="empty-state__icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </svg>
+    <h3 class="empty-state__title" data-field="title">No results found</h3>
+    <p class="empty-state__text" data-field="text"></p>
+    <p class="empty-state__actions" data-slot="actions"></p>
+  </div>
+</template>
+
+<!-- Live reload anchor for VS Code Live Server; see README "Local development". -->
+</body>

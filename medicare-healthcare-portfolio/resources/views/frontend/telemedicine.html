@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Telemedicine Overview | Remote Consultation Demo | MediCare</title>
+    <meta
+      name="description"
+      content="How remote healthcare consultation could work: consultation types, device and connectivity guidance, privacy and safety notes, and sample consultation cards. No real video calling is implemented."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/telemedicine.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Telemedicine Overview | Remote Consultation Demo | MediCare" />
+    <meta property="og:description" content="A demonstration of how remote consultation information and guidance could be presented." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/telemedicine.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-telemedicine.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/clinic.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="telemedicine" data-templates="doctor-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Telemedicine"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <span class="demo-flag">
+            <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+            <span>Explanatory content only</span>
+          </span>
+          <h1 class="page-header__title mt-4">Telemedicine and remote consultation</h1>
+          <p class="page-header__intro">
+            This page explains how a remote consultation service could be described and requested. No
+            video calling, messaging, triage, prescription or real-time communication is implemented
+            anywhere on this site.
+          </p>
+        </div>
+      </header>
+
+      <section class="section" aria-labelledby="tele-works-title">
+        <div class="container">
+          <h2 class="section-title" id="tele-works-title">How remote consultation could work</h2>
+          <ol class="workflow">
+            <li class="workflow__step">
+              <span class="workflow__label">Step 1</span>
+              <h3 class="workflow__title">Discover a specialist</h3>
+              <p class="workflow__text">
+                Filter the fictional directory by specialty, city and the consultation types a profile
+                lists.
+              </p>
+            </li>
+            <li class="workflow__step">
+              <span class="workflow__label">Step 2</span>
+              <h3 class="workflow__title">Review the sample profile</h3>
+              <p class="workflow__text">
+                Read the illustrative qualifications, languages and sample availability windows.
+              </p>
+            </li>
+            <li class="workflow__step">
+              <span class="workflow__label">Step 3</span>
+              <h3 class="workflow__title">Send a demo request</h3>
+              <p class="workflow__text">
+                Complete the static request form using fictional details. Validation happens locally.
+              </p>
+            </li>
+            <li class="workflow__step">
+              <span class="workflow__label">Step 4</span>
+              <h3 class="workflow__title">Review a simulated status</h3>
+              <p class="workflow__text">
+                Look up a sample reference ID to see how a status timeline could be presented.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="tele-types-title">
+        <div class="container">
+          <h2 class="section-title" id="tele-types-title">Sample consultation types</h2>
+          <div class="grid grid--3">
+            <article class="card card--compact">
+              <div class="card__body">
+                <h3 class="card__title">In-clinic consultation</h3>
+                <p class="card__text">
+                  A face-to-face appointment at a listed facility. Physical examination may be required and
+                  is not simulated here.
+                </p>
+              </div>
+            </article>
+            <article class="card card--compact">
+              <div class="card__body">
+                <h3 class="card__title">Video consultation</h3>
+                <p class="card__text">
+                  A described remote conversation. This demonstration does not open any audio or video
+                  channel.
+                </p>
+              </div>
+            </article>
+            <article class="card card--compact">
+              <div class="card__body">
+                <h3 class="card__title">Phone consultation</h3>
+                <p class="card__text">
+                  A described voice-only follow-up type. No call is placed or received by this site.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tele-device-title">
+        <div class="container">
+          <h2 class="section-title" id="tele-device-title">Device and connectivity guidance</h2>
+          <p class="section-intro">
+            General preparation notes that would apply to any remote consultation. This is general
+            information, not medical advice.
+          </p>
+          <ul class="stat-grid" data-device-guidance></ul>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="tele-privacy-title">
+        <div class="container">
+          <h2 class="section-title" id="tele-privacy-title">Privacy and safety information</h2>
+          <div class="grid grid--2">
+            <div class="info-panel info-panel--accent">
+              <h3 class="card__title">Privacy</h3>
+              <ul class="link-list">
+                <li>No form on this site transmits or stores what you type.</li>
+                <li>No patient-identifiable information is used in any demonstration record.</li>
+                <li>Nothing is written to cookies or browser storage by this project.</li>
+                <li>Sample identifiers are fixed fictional values, not account numbers.</li>
+              </ul>
+            </div>
+            <div class="info-panel">
+              <h3 class="card__title">Safety</h3>
+              <ul class="link-list">
+                <li>This demonstration cannot help with a real medical situation.</li>
+                <li>In an emergency, contact local emergency services.</li>
+                <li>Do not send real medical information through demonstration forms.</li>
+                <li>Always consult qualified professionals for genuine health concerns.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tele-cards-title">
+        <div class="container">
+          <h2 class="section-title" id="tele-cards-title">Sample remote-consultation profiles</h2>
+          <p class="section-intro">
+            Fictional profiles that list video or phone consultation among their sample consultation
+            types.
+          </p>
+          <ul class="card-grid" data-featured-doctors></ul>
+          <p class="mt-6">
+            <a class="btn btn--primary" href="doctors.html">Explore the full doctor directory</a>
+            <a class="btn btn--secondary" href="appointments.html">Open the request form</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!-- Service card. Used by the homepage category grid, the services directory and
+     the telemedicine service list. Rendered from this template so the markup is
+     never repeated across pages. -->
+<template data-template="service-card">
+  <article class="category-card">
+    <span class="category-card__icon" data-slot="icon"></span>
+    <h3 class="category-card__title" data-field="title"></h3>
+    <p class="category-card__text" data-field="text"></p>
+    <ul class="card__tags" data-slot="tags"></ul>
+    <a class="category-card__link link-arrow" data-attr-href="link" data-field="linkLabel">Learn more</a>
+  </article>
+</template>

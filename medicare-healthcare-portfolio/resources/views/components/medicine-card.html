@@ -1,0 +1,53 @@
+<!-- Medicine / pharmacy product card. Prices are illustrative BDT sample values.
+     "Requires prescription" is a catalogue label on fictional demo products and
+     is never medical guidance. -->
+<template data-template="medicine-card">
+  <article class="card product-card">
+    <figure class="card__media">
+      <img
+        src=""
+        alt=""
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+        data-attr-src="image"
+        data-attr-alt="imageAlt"
+      />
+    </figure>
+    <div class="card__body">
+      <p class="card__subtitle" data-field="category"></p>
+      <h3 class="card__title" data-field="name"></h3>
+      <p class="card__text" data-field="generic"></p>
+
+      <dl class="card__meta">
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Manufacturer</dt>
+          <dd class="card__meta-value" data-field="manufacturer"></dd>
+        </div>
+        <div class="card__meta-row">
+          <dt class="card__meta-term">Packaging</dt>
+          <dd class="card__meta-value" data-field="packaging"></dd>
+        </div>
+      </dl>
+
+      <ul class="card__tags" data-slot="badges"></ul>
+
+      <div class="card__footer">
+        <p class="product-card__price-row">
+          <span class="card__price" data-field="price"></span>
+          <span class="product-card__unit" data-field="unit"></span>
+        </p>
+        <a class="btn btn--secondary btn--sm" data-attr-href="link" data-field="linkLabel">Product details</a>
+        <button
+          class="btn btn--primary btn--sm"
+          type="button"
+          data-add-to-cart=""
+          data-attr-data-cart-id="cartId"
+        >
+          Add to cart preview
+        </button>
+      </div>
+    </div>
+  </article>
+</template>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fictional Doctor Profile | MediCare Demonstration</title>
+    <meta
+      name="description"
+      content="A fictional doctor profile from the MediCare demonstration dataset, showing illustrative qualifications, sample availability, consultation types and clinic association."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/doctors.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Fictional Doctor Profile | MediCare Demonstration" />
+    <meta property="og:description" content="Illustrative qualifications, sample availability and consultation types for a fictional doctor profile." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/doctor-details.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/clinic.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="doctor-details" data-templates="doctor-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Doctors|doctors.html;Profile"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article data-detail="doctor">
+        <header class="detail-hero">
+          <div class="container detail-hero__layout">
+            <div>
+              <span class="demo-flag">
+                <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+                <span>Fictional profile</span>
+              </span>
+              <h1 class="detail-hero__title mt-4" data-field="name">Fictional doctor profile</h1>
+              <p class="detail-hero__subtitle" data-field="specialty"></p>
+              <p class="card__text" data-field="qualifications"></p>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="appointments.html" data-attr-href="requestLink">Request appointment (demo)</a>
+                <a class="btn btn--secondary" href="clinics.html" data-attr-href="clinicLink">View associated clinic</a>
+                <a class="btn btn--ghost" href="doctors.html">Back to the directory</a>
+              </div>
+            </div>
+
+            <figure>
+              <img
+                class="detail-hero__media"
+                src=""
+                alt=""
+                width="320"
+                height="320"
+                data-attr-src="image"
+                data-attr-alt="imageAlt"
+              />
+              <figcaption class="text-small text-muted mt-4">
+                Illustrated placeholder portrait. No real person is depicted.
+              </figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="container section">
+          <div class="article-layout">
+            <div>
+              <section class="content-block" aria-labelledby="doctor-about-title">
+                <h2 class="content-block__title" id="doctor-about-title">About this demonstration profile</h2>
+                <p data-field="about"></p>
+                <p class="mb-0">
+                  The description above is sample catalogue copy written for this portfolio. It is not a
+                  clinical biography and must not be interpreted as medical guidance.
+                </p>
+              </section>
+
+              <section class="content-block" aria-labelledby="doctor-summary-title">
+                <h2 class="content-block__title" id="doctor-summary-title">Profile summary</h2>
+                <div data-slot="facts"></div>
+              </section>
+
+              <section class="content-block" aria-labelledby="doctor-availability-title">
+                <h2 class="content-block__title" id="doctor-availability-title">Sample availability</h2>
+                <div data-slot="availability"></div>
+                <div class="alert alert--warning mt-6" role="note">
+                  <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
+                  <div class="alert__body">
+                    <strong class="alert__title">Illustrative slots only</strong>
+                    <p>
+                      These times are fictional examples. They are not verified openings, and no booking
+                      system is connected to this demonstration.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <aside aria-label="Profile sidebar">
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Clinic association</h2>
+                <p class="card__text" data-field="clinicName"></p>
+                <p>
+                  <a class="btn btn--secondary btn--sm" href="clinics.html" data-attr-href="clinicLink">
+                    Open the clinic profile
+                  </a>
+                </p>
+              </div>
+
+              <div class="sidebar-card">
+                <h2 class="sidebar-card__title">Before you use this demo</h2>
+                <ul class="link-list">
+                  <li>Profiles are fictional and cannot be contacted.</li>
+                  <li>The request form validates locally and sends nothing.</li>
+                  <li>Never rely on demonstration content for health decisions.</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <section class="content-block" aria-labelledby="doctor-related-title">
+            <h2 class="content-block__title" id="doctor-related-title">Related demonstration profiles</h2>
+            <div data-slot="related"></div>
+          </section>
+        </div>
+      </article>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

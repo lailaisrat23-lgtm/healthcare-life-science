@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Healthcare Services Directory | MediCare Platform Demo</title>
+    <meta
+      name="description"
+      content="Search and filter the twelve demonstration healthcare services on the MediCare platform, from general medicine and telemedicine to diagnostics, pharmacy and B2B supplier directories."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/services.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Healthcare Services Directory | MediCare Platform Demo" />
+    <meta property="og:description" content="All demonstration healthcare services in one searchable overview." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/services.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/hero/hero-healthcare.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="services">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Services"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Healthcare services</h1>
+          <p class="page-header__intro">
+            Twelve demonstration services across consultation, diagnostics, pharmacy and industry
+            directories. Filter the list below to see how a service overview could work — all content is
+            fictional sample data.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <form class="search-panel" role="search" aria-label="Search services" novalidate="novalidate">
+          <div class="search-panel__grid">
+            <div class="form__group">
+              <label class="form__label" for="services-search">Search services</label>
+              <input
+                class="form__control"
+                type="search"
+                id="services-search"
+                name="q"
+                autocomplete="off"
+                placeholder="For example: diagnostics, pharmacy, telemedicine"
+                data-services-search
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="services-category">Service category</label>
+              <select class="form__control" id="services-category" name="category" data-services-category>
+                <option value="">All service categories</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Diagnostics">Diagnostics</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Industry">Industry</option>
+                <option value="Support">Support</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-panel__actions">
+            <p class="results-count" data-services-count role="status"></p>
+          </div>
+        </form>
+
+        <div class="mt-8" data-services-results></div>
+      </div>
+
+      <section class="section section--surface" aria-labelledby="journey-title">
+        <div class="container">
+          <h2 class="section-title" id="journey-title">Which service should you start with?</h2>
+          <div class="grid grid--2">
+            <div class="info-panel info-panel--accent">
+              <h3 class="card__title">If you are exploring patient journeys</h3>
+              <p class="card__text">
+                Start with the doctor directory, then follow a profile through to the appointment request
+                form and the simulated tracking view.
+              </p>
+              <p>
+                <a class="btn btn--secondary btn--sm" href="doctors.html">Open the doctor directory</a>
+              </p>
+            </div>
+            <div class="info-panel">
+              <h3 class="card__title">If you are exploring B2B workflows</h3>
+              <p class="card__text">
+                Start with the manufacturer directory to see capability and documentation categories,
+                then compare it with the raw material supplier directory.
+              </p>
+              <p>
+                <a class="btn btn--secondary btn--sm" href="pharmaceutical-manufacturers.html">Open the manufacturer directory</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container" data-component="demo-notice"></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>

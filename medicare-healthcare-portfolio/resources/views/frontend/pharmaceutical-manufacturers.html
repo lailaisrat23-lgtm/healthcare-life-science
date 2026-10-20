@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pharmaceutical Manufacturer Directory | Fictional B2B Demo</title>
+    <meta
+      name="description"
+      content="A B2B demonstration directory of six fictional pharmaceutical manufacturers with product categories, manufacturing capabilities, quality documentation categories and business inquiry entry points."
+    />
+    <link rel="canonical" href="https://example.com/resources/views/frontend/pharmaceutical-manufacturers.html" />
+    <meta name="theme-color" content="#0b5d63" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediCare Integrated Clinic &amp; Telemedicine Platform" />
+    <meta property="og:title" content="Pharmaceutical Manufacturer Directory | Fictional B2B Demo" />
+    <meta property="og:description" content="Six fictional manufacturer profiles with capabilities and documentation categories." />
+    <meta property="og:url" content="https://example.com/resources/views/frontend/pharmaceutical-manufacturers.html" />
+    <meta property="og:image" content="https://example.com/public/assets/images/pharmaceutical/facility-01.svg" />
+
+    <link rel="icon" href="../../../public/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../public/css/style.css" />
+
+    <script src="../../../public/js/ui.js" defer></script>
+    <script src="../../../public/js/data.js" defer></script>
+    <script src="../../../public/js/components.js" defer></script>
+    <script src="../../../public/js/navigation.js" defer></script>
+    <script src="../../../public/js/forms.js" defer></script>
+    <script src="../../../public/js/supplier-directory.js" defer></script>
+    <script src="../../../public/js/main.js" defer></script>
+  </head>
+
+  <body data-page="manufacturers" data-templates="manufacturer-card">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="navbar"></div>
+    <div data-component="breadcrumb" data-trail="Home|@home;Pharmaceutical manufacturers"></div>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <header class="page-header">
+        <div class="container">
+          <span class="demo-flag">
+            <svg class="demo-flag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z" /></svg>
+            <span>Fictional companies</span>
+          </span>
+          <h1 class="page-header__title mt-4">Pharmaceutical manufacturer directory</h1>
+          <p class="page-header__intro">
+            Six fictional manufacturer profiles showing how product categories, manufacturing
+            capabilities and documentation categories could be presented to business visitors. No
+            certification, licence, approval or regulatory status is claimed for any company listed here.
+          </p>
+        </div>
+      </header>
+
+      <div class="container section">
+        <div class="directory-layout">
+          <aside aria-label="Filter manufacturer profiles">
+            <div data-manufacturer-filters></div>
+
+            <div class="info-panel mt-6">
+              <h2 class="sidebar-card__title">Documentation categories</h2>
+              <ul class="link-list">
+                <li>Dossier index (sample)</li>
+                <li>Batch record template (sample)</li>
+                <li>Stability study outline (illustrative)</li>
+                <li>Packaging artwork checklist (sample)</li>
+              </ul>
+              <p class="card__text mt-4 mb-0">
+                These are demonstration document categories only. No real regulatory document is
+                provided or implied.
+              </p>
+            </div>
+          </aside>
+
+          <section aria-labelledby="manufacturer-results-title">
+            <h2 class="visually-hidden" id="manufacturer-results-title">Manufacturer search results</h2>
+            <ul class="card-grid" data-manufacturer-results aria-live="polite"></ul>
+            <div data-manufacturer-pagination></div>
+
+            <div class="alert alert--info mt-8" role="note">
+              <svg class="alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M12 16v-4" /><path d="M12 8h.01" /></svg>
+              <div class="alert__body">
+                <strong class="alert__title">Fictional business information</strong>
+                <p>
+                  Company names, locations, founding years and capabilities are invented for this
+                  portfolio demonstration. This directory must not be used for procurement or supplier
+                  qualification.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container section" id="business-inquiry" data-component="inquiry-form" data-fill-legend="Manufacturing business inquiry (demo)"></div>
+
+      <div class="container" data-component="demo-notice" data-fill-message="Fictional demonstration content. Every manufacturer, location, capability and document category on this page is invented for portfolio presentation. No certification, approval or verification is claimed or implied."></div>
+    </main>
+
+    <div data-component="footer"></div>
+  </body>
+</html>
