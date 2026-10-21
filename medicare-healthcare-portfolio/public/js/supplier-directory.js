@@ -30,7 +30,7 @@
       founded: String(company.founded) + " (illustrative)",
       categories: "Sample categories: " + company.categories.join(", "),
       image: UI.assetUrl(company.image),
-      imageAlt: "Illustration representing " + company.name + ", a fictional manufacturing profile.",
+      imageAlt: "Stock photograph representing " + company.name + ", a fictional manufacturing profile.",
       link: UI.pageUrl("manufacturer-details.html") + "?id=" + encodeURIComponent(company.id),
       linkLabel: "Company profile",
       inquiryLink: UI.pageUrl("contact.html") + "?topic=manufacturing&company=" + encodeURIComponent(company.id)
@@ -57,7 +57,7 @@
       materialCount: company.materials.length + " sample material record(s)",
       categories: "Sample categories: " + company.categories.join(", "),
       image: UI.assetUrl(company.image),
-      imageAlt: "Illustration representing " + company.name + ", a fictional raw material supplier profile.",
+      imageAlt: "Stock photograph representing " + company.name + ", a fictional raw material supplier profile.",
       link: UI.pageUrl("supplier-details.html") + "?id=" + encodeURIComponent(company.id),
       linkLabel: "Supplier profile",
       inquiryLink: UI.pageUrl("contact.html") + "?topic=supply&supplier=" + encodeURIComponent(company.id)
@@ -385,7 +385,7 @@
       founded: String(company.founded) + " (illustrative)",
       about: company.about,
       image: UI.assetUrl(company.image),
-      imageAlt: "Illustration representing " + company.name + ", a fictional manufacturing profile.",
+      imageAlt: "Stock photograph representing " + company.name + ", a fictional manufacturing profile.",
       inquiryLink: "#business-inquiry"
     });
 
@@ -454,7 +454,7 @@
       founded: String(company.founded) + " (illustrative)",
       about: company.about,
       image: UI.assetUrl(company.image),
-      imageAlt: "Illustration representing " + company.name + ", a fictional raw material supplier profile.",
+      imageAlt: "Stock photograph representing " + company.name + ", a fictional raw material supplier profile.",
       inquiryLink: "#business-inquiry"
     });
 

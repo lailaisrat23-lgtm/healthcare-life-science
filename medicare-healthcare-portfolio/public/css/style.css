@@ -1957,6 +1957,7 @@ textarea.form__control {
   border-radius: var(--radius-pill);
   border: 2px solid var(--color-primary-soft);
   background-color: var(--color-surface);
+  object-fit: cover;
 }
 
 .doctor-card__body-header {
@@ -2011,6 +2012,7 @@ textarea.form__control {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
+  object-fit: cover;
 }
 
 .detail-hero__media--wide {
@@ -2512,6 +2514,7 @@ textarea.form__control {
   border-radius: var(--radius-pill);
   border: 2px solid var(--color-primary-soft);
   background-color: var(--color-background);
+  object-fit: cover;
 }
 
 .portal-header__name {

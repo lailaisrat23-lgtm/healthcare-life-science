@@ -35,7 +35,7 @@
       }
     ],
     "about": "Fictional manufacturer profile created purely to demonstrate how a B2B pharmaceutical directory could present company, capability and documentation categories. Nothing here is a certification, approval or regulatory claim.",
-    "image": "pharmaceutical/facility-01.svg"
+    "image": "pharmaceutical/facility-01.jpg"
   },
   {
     "id": "mfr-002",
@@ -67,7 +67,7 @@
       }
     ],
     "about": "Fictional B2B profile used to demonstrate manufacturer directory card and detail layouts. No compliance, licence or approval is implied.",
-    "image": "pharmaceutical/facility-02.svg"
+    "image": "pharmaceutical/facility-02.jpg"
   },
   {
     "id": "mfr-003",
@@ -100,7 +100,7 @@
       }
     ],
     "about": "Fictional manufacturer profile demonstrating a broader product portfolio layout and business enquiry entry point.",
-    "image": "pharmaceutical/facility-03.svg"
+    "image": "pharmaceutical/facility-03.jpg"
   },
   {
     "id": "mfr-004",
@@ -134,7 +134,7 @@
       }
     ],
     "about": "Fictional profile used to demonstrate paediatric and hygiene-adjacent manufacturing categories in the directory demo.",
-    "image": "pharmaceutical/facility-04.svg"
+    "image": "pharmaceutical/facility-04.jpg"
   },
   {
     "id": "mfr-005",
@@ -162,7 +162,7 @@
       }
     ],
     "about": "Fictional manufacturer and distributor profile demonstrating how mixed medicine and device portfolios could be listed.",
-    "image": "pharmaceutical/facility-05.svg"
+    "image": "pharmaceutical/facility-05.jpg"
   },
   {
     "id": "mfr-006",
@@ -194,6 +194,6 @@
       }
     ],
     "about": "Fictional sterile-format manufacturer profile used to demonstrate cold-chain category presentation in this demo.",
-    "image": "pharmaceutical/facility-06.svg"
+    "image": "pharmaceutical/facility-06.jpg"
   }
 ]

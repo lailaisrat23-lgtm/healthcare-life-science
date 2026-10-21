@@ -8,7 +8,7 @@
     "turnaround": "Same day (illustrative)",
     "preparation": "No fasting required for this sample entry.",
     "description": "Illustrative description: a CBC panel generally reports counts of blood cell types. The wording here is educational and is not clinical interpretation.",
-    "image": "diagnostics/test-01.svg"
+    "image": "diagnostics/test-01.jpg"
   },
   {
     "id": "test-002",
@@ -19,7 +19,7 @@
     "turnaround": "Same day (illustrative)",
     "preparation": "Sample guidance: 8 – 10 hours of fasting is commonly requested for this type of sample. Confirm with a real laboratory.",
     "description": "Illustrative description: measures glucose in a blood sample collected after a fasting period.",
-    "image": "diagnostics/test-02.svg"
+    "image": "diagnostics/test-02.jpg"
   },
   {
     "id": "test-003",
@@ -30,7 +30,7 @@
     "turnaround": "24 hours (illustrative)",
     "preparation": "Sample guidance: fasting may be requested. Confirm with a real laboratory.",
     "description": "Illustrative description: a group of blood measurements often used alongside clinical assessment.",
-    "image": "diagnostics/test-03.svg"
+    "image": "diagnostics/test-03.jpg"
   },
   {
     "id": "test-004",
@@ -41,7 +41,7 @@
     "turnaround": "12 hours (illustrative)",
     "preparation": "No special preparation recorded for this sample entry.",
     "description": "Illustrative description: a blood measurement commonly grouped with kidney function panels.",
-    "image": "diagnostics/test-04.svg"
+    "image": "diagnostics/test-04.jpg"
   },
   {
     "id": "test-005",
@@ -52,7 +52,7 @@
     "turnaround": "24 – 48 hours (illustrative)",
     "preparation": "Sample guidance: timing may be discussed with the laboratory.",
     "description": "Illustrative description: a set of hormone measurements presented as a panel.",
-    "image": "diagnostics/test-05.svg"
+    "image": "diagnostics/test-05.jpg"
   },
   {
     "id": "test-006",
@@ -63,7 +63,7 @@
     "turnaround": "Same day (illustrative)",
     "preparation": "Sample guidance: a midstream sample is typically requested.",
     "description": "Illustrative description: a general urine analysis entry.",
-    "image": "diagnostics/test-06.svg"
+    "image": "diagnostics/test-06.jpg"
   },
   {
     "id": "test-007",
@@ -74,7 +74,7 @@
     "turnaround": "Same day (illustrative)",
     "preparation": "Sample guidance: remove metal items as directed by staff.",
     "description": "Illustrative description: a radiographic imaging entry used for demonstration layout purposes.",
-    "image": "diagnostics/test-07.svg"
+    "image": "diagnostics/test-07.jpg"
   },
   {
     "id": "test-008",
@@ -85,7 +85,7 @@
     "turnaround": "Same day (illustrative)",
     "preparation": "Sample guidance: fasting and a full bladder may be requested. Confirm with a real facility.",
     "description": "Illustrative description: an ultrasound imaging entry used to demonstrate category filtering.",
-    "image": "diagnostics/test-08.svg"
+    "image": "diagnostics/test-08.jpg"
   },
   {
     "id": "test-009",
@@ -96,7 +96,7 @@
     "turnaround": "24 hours (illustrative)",
     "preparation": "No fasting recorded for this sample entry.",
     "description": "Illustrative description: a long-window blood glucose marker listed for demo purposes.",
-    "image": "diagnostics/test-09.svg"
+    "image": "diagnostics/test-09.jpg"
   },
   {
     "id": "test-010",
@@ -107,7 +107,7 @@
     "turnaround": "48 hours (illustrative)",
     "preparation": "Sample guidance: fasting may be requested.",
     "description": "Illustrative description: a grouped blood panel entry.",
-    "image": "diagnostics/test-10.svg"
+    "image": "diagnostics/test-10.jpg"
   },
   {
     "id": "test-011",
@@ -118,7 +118,7 @@
     "turnaround": "Immediate tracing, report same day (illustrative)",
     "preparation": "No preparation recorded for this sample entry.",
     "description": "Illustrative description: a cardiac tracing entry used to demonstrate the Cardiology category.",
-    "image": "diagnostics/test-11.svg"
+    "image": "diagnostics/test-11.jpg"
   },
   {
     "id": "test-012",
@@ -129,6 +129,6 @@
     "turnaround": "72 hours (illustrative)",
     "preparation": "No special preparation recorded for this sample entry.",
     "description": "Illustrative description: a vitamin measurement entry used to demonstrate premium pricing display.",
-    "image": "diagnostics/test-12.svg"
+    "image": "diagnostics/test-12.jpg"
   }
 ]

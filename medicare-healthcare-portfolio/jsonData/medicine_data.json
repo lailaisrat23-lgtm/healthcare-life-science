@@ -19,7 +19,7 @@
       "med-004",
       "med-010"
     ],
-    "image": "pharmacy/product-01.svg"
+    "image": "pharmacy/product-01.jpg"
   },
   {
     "id": "med-002",
@@ -41,7 +41,7 @@
       "med-009",
       "med-005"
     ],
-    "image": "pharmacy/product-02.svg"
+    "image": "pharmacy/product-02.jpg"
   },
   {
     "id": "med-003",
@@ -62,7 +62,7 @@
       "med-005",
       "med-002"
     ],
-    "image": "pharmacy/product-03.svg"
+    "image": "pharmacy/product-03.jpg"
   },
   {
     "id": "med-004",
@@ -83,7 +83,7 @@
       "med-001",
       "med-010"
     ],
-    "image": "pharmacy/product-04.svg"
+    "image": "pharmacy/product-04.jpg"
   },
   {
     "id": "med-005",
@@ -104,7 +104,7 @@
       "med-003",
       "med-006"
     ],
-    "image": "pharmacy/product-05.svg"
+    "image": "pharmacy/product-05.jpg"
   },
   {
     "id": "med-006",
@@ -125,7 +125,7 @@
       "med-012",
       "med-005"
     ],
-    "image": "pharmacy/product-06.svg"
+    "image": "pharmacy/product-06.jpg"
   },
   {
     "id": "med-007",
@@ -146,7 +146,7 @@
       "med-002",
       "med-009"
     ],
-    "image": "pharmacy/product-07.svg"
+    "image": "pharmacy/product-07.jpg"
   },
   {
     "id": "med-008",
@@ -167,7 +167,7 @@
       "med-011",
       "med-009"
     ],
-    "image": "pharmacy/product-08.svg"
+    "image": "pharmacy/product-08.jpg"
   },
   {
     "id": "med-009",
@@ -188,7 +188,7 @@
       "med-002",
       "med-007"
     ],
-    "image": "pharmacy/product-09.svg"
+    "image": "pharmacy/product-09.jpg"
   },
   {
     "id": "med-010",
@@ -209,7 +209,7 @@
       "med-001",
       "med-004"
     ],
-    "image": "pharmacy/product-10.svg"
+    "image": "pharmacy/product-10.jpg"
   },
   {
     "id": "med-011",
@@ -231,7 +231,7 @@
       "med-008",
       "med-009"
     ],
-    "image": "pharmacy/product-11.svg"
+    "image": "pharmacy/product-11.jpg"
   },
   {
     "id": "med-012",
@@ -252,7 +252,7 @@
       "med-006",
       "med-013"
     ],
-    "image": "pharmacy/product-12.svg"
+    "image": "pharmacy/product-12.jpg"
   },
   {
     "id": "med-013",
@@ -273,7 +273,7 @@
       "med-014",
       "med-012"
     ],
-    "image": "pharmacy/product-13.svg"
+    "image": "pharmacy/product-13.jpg"
   },
   {
     "id": "med-014",
@@ -294,6 +294,6 @@
       "med-013",
       "med-006"
     ],
-    "image": "pharmacy/product-14.svg"
+    "image": "pharmacy/product-14.jpg"
   }
 ]

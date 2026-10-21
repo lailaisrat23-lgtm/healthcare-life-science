@@ -227,29 +227,31 @@ its canonical at its listing page.
 
 ## 6. Asset manifest
 
-Images are **authored SVG illustrations committed with the project** (no runtime dependency on any
-image-generation service, no broken or hot-linked URLs). Every file declares `role="img"` and a
-descriptive `aria-label`; inline `alt` text is applied at the usage site.
+Images are **stored locally in `public/assets/`** — no hot-linking and no runtime dependency on an
+external image service. The brand mark and favicon are authored SVG; every photographic asset is a
+JPEG photograph sourced from [Pexels](https://www.pexels.com/license/) (free for commercial use, no
+attribution required) and downloaded at the aspect ratio the layout expects (16:9 for cards, 4:3 for
+heroes, 1:1 for portraits). Descriptive `alt` text is applied at the usage site.
 
 | Path | Purpose | Type |
 |------|---------|------|
 | `public/assets/images/logo.svg` | MediCare brand mark | SVG 64×64 |
 | `public/assets/icons/favicon.svg` | Favicon | SVG 64×64 |
-| `public/assets/images/hero/hero-healthcare.svg` | Homepage hero | Illustration 960×640 |
-| `public/assets/images/hero/hero-telemedicine.svg` | Telemedicine hero | Illustration 960×640 |
-| `public/assets/images/hero/hero-about.svg` | Clinic reception illustration | Illustration 960×640 |
-| `public/assets/images/hero/hero-diagnostics.svg` | Laboratory illustration | Illustration 960×640 |
-| `public/assets/images/doctors/doctor-01.svg` … `doctor-12.svg` | Placeholder portraits for the 12 fictional doctors | Portrait 320×320 |
-| `public/assets/images/clinics/clinic-01.svg` … `clinic-08.svg` | Clinic / centre illustrations | Card 640×360 |
-| `public/assets/images/pharmacy/product-01.svg` … `product-14.svg` | Product illustrations | Card 640×360 |
-| `public/assets/images/diagnostics/test-01.svg` … `test-12.svg` | Diagnostic test illustrations | Card 640×360 |
-| `public/assets/images/pharmaceutical/facility-01.svg` … `facility-06.svg` | Manufacturing capability illustrations | Card 640×360 |
-| `public/assets/images/suppliers/material-01.svg` … `material-06.svg` | Raw material illustrations | Card 640×360 |
+| `public/assets/images/hero/hero-healthcare.jpg` | Homepage hero | Photo 1000×750 |
+| `public/assets/images/hero/hero-telemedicine.jpg` | Telemedicine hero | Photo 1000×750 |
+| `public/assets/images/hero/hero-about.jpg` | About page hero | Photo 1000×750 |
+| `public/assets/images/hero/hero-diagnostics.jpg` | Diagnostics hero | Photo 1000×750 |
+| `public/assets/images/doctors/doctor-01.jpg` … `doctor-12.jpg` | Portraits for the 12 fictional doctors | Photo 480×480 |
+| `public/assets/images/clinics/clinic-01.jpg` … `clinic-08.jpg` | Clinic / centre photographs | Photo 800×450 |
+| `public/assets/images/pharmacy/product-01.jpg` … `product-14.jpg` | Product photographs | Photo 800×450 |
+| `public/assets/images/diagnostics/test-01.jpg` … `test-12.jpg` | Diagnostic test photographs | Photo 800×450 |
+| `public/assets/images/pharmaceutical/facility-01.jpg` … `facility-06.jpg` | Manufacturing capability photographs | Photo 800×450 |
+| `public/assets/images/suppliers/material-01.jpg` … `material-06.jpg` | Raw material photographs | Photo 800×450 |
 
-Total: 64 SVG files. All are locally authored for this project and carry no third-party licence
-obligations. If real photography is substituted later, keep the same filenames and aspect ratios
-(16:9 for cards, 4:3 for heroes, 1:1 for portraits) so layouts need no changes, and prefer WebP with
-an SVG or JPEG fallback.
+Total: 62 photographs plus 2 SVG brand assets. The people, clinics and products shown are stock
+photography used to illustrate the layout — none of them depicts a record in `jsonData/`, and every
+detail page states this in its figure caption. Replacement images should keep the same filenames and
+aspect ratios (16:9 cards, 4:3 heroes, 1:1 portraits) so no layout changes are needed.
 
 ---
 

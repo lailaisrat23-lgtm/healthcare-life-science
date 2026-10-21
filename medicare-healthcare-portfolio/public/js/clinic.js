@@ -23,7 +23,7 @@
   }
 
   function doctorImageAlt(doctor) {
-    return "Illustrated placeholder portrait for " + doctor.name + ", a fictional " + doctor.specialty + " profile.";
+    return "Stock photograph representing " + doctor.name + ", a fictional " + doctor.specialty + " profile.";
   }
 
   function renderDoctorCard(doctor) {
@@ -88,7 +88,7 @@
       doctorCount: doctors.length + " listed (illustrative)",
       services: "Sample services: " + clinic.services.join(", "),
       image: UI.assetUrl(clinic.image),
-      imageAlt: "Illustration representing " + clinic.name + ", a fictional " + clinic.type + ".",
+      imageAlt: "Stock photograph representing " + clinic.name + ", a fictional " + clinic.type + ".",
       link: UI.pageUrl("clinic-details.html") + "?id=" + encodeURIComponent(clinic.id),
       linkLabel: "Clinic details",
       requestLink: UI.pageUrl("appointments.html") + "?clinic=" + encodeURIComponent(clinic.id)
@@ -582,7 +582,7 @@
       phone: clinic.phone,
       about: clinic.about,
       image: UI.assetUrl(clinic.image),
-      imageAlt: "Illustration representing " + clinic.name + ", a fictional " + clinic.type + ".",
+      imageAlt: "Stock photograph representing " + clinic.name + ", a fictional " + clinic.type + ".",
       requestLink: UI.pageUrl("appointments.html") + "?clinic=" + encodeURIComponent(clinic.id)
     });
 

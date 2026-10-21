@@ -36,7 +36,7 @@
       }
     ],
     "about": "Fictional multi-specialty clinic profile created to demonstrate how a specialist centre could present departments, facilities and consulting hours.",
-    "image": "clinics/clinic-01.svg"
+    "image": "clinics/clinic-01.jpg"
   },
   {
     "id": "clinic-002",
@@ -72,7 +72,7 @@
       }
     ],
     "about": "Fictional family practice profile used to demonstrate general consultation and preventive care listings.",
-    "image": "clinics/clinic-02.svg"
+    "image": "clinics/clinic-02.jpg"
   },
   {
     "id": "clinic-003",
@@ -108,7 +108,7 @@
       }
     ],
     "about": "Fictional regional medical centre profile demonstrating multi-specialty directory content for Chattogram.",
-    "image": "clinics/clinic-03.svg"
+    "image": "clinics/clinic-03.jpg"
   },
   {
     "id": "clinic-004",
@@ -144,7 +144,7 @@
       }
     ],
     "about": "Fictional clinic profile demonstrating specialist neurology listing patterns in a regional setting.",
-    "image": "clinics/clinic-04.svg"
+    "image": "clinics/clinic-04.jpg"
   },
   {
     "id": "clinic-005",
@@ -180,7 +180,7 @@
       }
     ],
     "about": "Fictional clinic profile demonstrating women's and children's health service listings with privacy-focussed presentation.",
-    "image": "clinics/clinic-05.svg"
+    "image": "clinics/clinic-05.jpg"
   },
   {
     "id": "clinic-006",
@@ -212,7 +212,7 @@
       }
     ],
     "about": "Fictional polyclinic profile demonstrating how smaller regional facilities could be represented.",
-    "image": "clinics/clinic-06.svg"
+    "image": "clinics/clinic-06.jpg"
   },
   {
     "id": "clinic-007",
@@ -248,7 +248,7 @@
       }
     ],
     "about": "Fictional medical complex profile demonstrating chronic condition service listings for the Rajshahi demo entry.",
-    "image": "clinics/clinic-07.svg"
+    "image": "clinics/clinic-07.jpg"
   },
   {
     "id": "clinic-008",
@@ -280,6 +280,6 @@
       }
     ],
     "about": "Fictional diagnostic centre profile used to demonstrate the sample report-tracking workflow.",
-    "image": "clinics/clinic-08.svg"
+    "image": "clinics/clinic-08.jpg"
   }
 ]

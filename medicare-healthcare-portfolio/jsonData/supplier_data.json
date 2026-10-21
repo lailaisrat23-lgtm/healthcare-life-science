@@ -36,7 +36,7 @@
       }
     ],
     "about": "Fictional supplier profile used to demonstrate a B2B raw-material directory. This entry is not a qualified, approved or certified supplier of any kind.",
-    "image": "suppliers/material-01.svg"
+    "image": "suppliers/material-01.jpg"
   },
   {
     "id": "sup-002",
@@ -71,7 +71,7 @@
       }
     ],
     "about": "Fictional excipient supplier profile created for layout demonstration only. No qualification or approval status is implied.",
-    "image": "suppliers/material-02.svg"
+    "image": "suppliers/material-02.jpg"
   },
   {
     "id": "sup-003",
@@ -99,7 +99,7 @@
       }
     ],
     "about": "Fictional trading house profile used to demonstrate packaging-material categories in the supplier directory.",
-    "image": "suppliers/material-03.svg"
+    "image": "suppliers/material-03.jpg"
   },
   {
     "id": "sup-004",
@@ -138,7 +138,7 @@
       }
     ],
     "about": "Fictional reagent supplier profile demonstrating multi-material listing layouts in the supplier directory demo.",
-    "image": "suppliers/material-04.svg"
+    "image": "suppliers/material-04.jpg"
   },
   {
     "id": "sup-005",
@@ -165,7 +165,7 @@
       }
     ],
     "about": "Fictional nutraceutical ingredient supplier profile used to demonstrate the ingredient category in the directory.",
-    "image": "suppliers/material-05.svg"
+    "image": "suppliers/material-05.jpg"
   },
   {
     "id": "sup-006",
@@ -193,6 +193,6 @@
       }
     ],
     "about": "Fictional laboratory consumables supplier profile used to demonstrate non-chemical categories in the directory.",
-    "image": "suppliers/material-06.svg"
+    "image": "suppliers/material-06.jpg"
   }
 ]

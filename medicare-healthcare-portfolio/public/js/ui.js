@@ -86,7 +86,7 @@
 
   var BASE_PREFIX = detectBasePrefix();
 
-  /** Resolve a path inside `public/assets/` (e.g. `images/hero/hero.svg`). */
+  /** Resolve a path inside `public/assets/` (e.g. `images/hero/hero.jpg`). */
   function assetUrl(relativePath) {
     var clean = String(relativePath || "").replace(/^\//, "");
     if (/^(https?:)?\/\//.test(clean)) {

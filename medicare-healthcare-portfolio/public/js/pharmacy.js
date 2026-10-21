@@ -21,7 +21,7 @@
   var initialized = {};
 
   function productImageAlt(product) {
-    return "Illustration representing the fictional demonstration product " + product.name + ".";
+    return "Stock photograph representing the fictional demonstration product " + product.name + ".";
   }
 
   function renderMedicineCard(product) {

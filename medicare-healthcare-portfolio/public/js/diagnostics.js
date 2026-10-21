@@ -19,7 +19,7 @@
   var initialized = {};
 
   function testImageAlt(test) {
-    return "Illustration representing the fictional diagnostic test entry " + test.name + ".";
+    return "Stock photograph representing the fictional diagnostic test entry " + test.name + ".";
   }
 
   function renderTestCard(test) {
